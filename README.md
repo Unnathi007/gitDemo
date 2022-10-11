@@ -1,1 +1,1 @@
-# Upload your Files with this format "vkota htmldemos"
+# Upload your files in a folder with this format name "vkota htmldemos"
