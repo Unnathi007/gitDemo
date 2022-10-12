@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul style="list-style: none">
+      <li>Audio Files
+        <ul id="audiolist">
+          <li><a href="#" data-value="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga">Death_Becomes_Fur.oga</a></li>
+          <li><a href="#" data-value="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4">Death_Becomes_Fur.mp4</a></li>
+          <li><a href="#" data-value="http://media.w3.org/2010/11/rrs006.oga">rrs006.oga</a></li>
+          <li><a href="#" data-value="http://media.w3.org/2010/05/sound/sound_90.mp3">sound_90.mp3</a></li>
+        </ul>
+      </li>
+      <li> Video Files
+        <ul id="videolist">
+          <li><a href="#" data-value="access management.mp4">Access management</li>
+          <li><a href="#" data-value="identity security.mp4">identity security</li>
+          <li><a href="#" data-value="workforce identity 1.mp4">workforce identity</li>
+    </ul>
+
+      <audio id="audio" controls="controls">
+        <source id="audioSource" src=""></source>
+        Your browser does not support the audio format.
+      </audio>
+
+    <video id="video" controls="controls">
+      <source id="videoSource" src=""></source>
+      Your browser does not support the audio format.
+    </audio>
+
+<script>
+  audiolist.onclick = function(e) {
+    e.preventDefault();
+  
+    var elm = e.target;
+    var audio = document.getElementById('audio');
+  
+    var source = document.getElementById('audioSource');
+    source.src = elm.getAttribute('data-value');
+  
+    audio.load(); //call this to just preload the audio without playing
+    audio.play(); //call this to play the song right away
+  };
+
+  videolist.onclick = function(e) {
+    e.preventDefault();
+  
+    var elm = e.target;
+    var video = document.getElementById('video');
+  
+    var source = document.getElementById('videoSource');
+    source.src = elm.getAttribute('data-value');
+  
+    video.load(); //call this to just preload the audio without playing
+    video.play(); //call this to play the song right away
+  };
+</script>
+
+</body>
+</html>
+
+  
+ 
+
+  

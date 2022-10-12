@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title> Sample Web Page </title>
+		<style>
+			ul li {
+				display: inline;
+				font-size: 20px;
+				padding-left: 14.6%;
+				padding-right: 14.6%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			ul li:hover{
+				background-color: #9904ba;
+			}
+			body{  
+			  font-family: Calibri, Helvetica, sans-serif;  
+			  background-color: pink; 
+
+			  height: 100%; 
+			  
+			  display: grid;
+			  grid-template-rows: auto auto 1fr auto;
+			} 
+			div {
+				display: flex;
+				margin: 20px
+			}
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			h1 {
+				font-size: 30px
+			}
+			p {
+				font-size: 20px;
+				text-align: justify;
+				margin-right: 15px;
+			}
+			.activeLink {
+				background-color: #9904ba;
+			}
+		</style>
+	</head>
+	<body>
+		<header style="background-color: #9904ba;"> 
+			<center> <img src="Logo.png" width="200px" height="200px"> </center> 
+		</header>
+		<nav> 
+			<ul style="list-style-type: none; background-color: #681b8c; padding: 20px;">
+				<li class="activeLink"> <a href="home.html">Home</a> </li>
+				<li> <a href="register.html">Register</a> </li>
+				<li> <a href="login.html">Login</a> </li>
+			</ul>			
+		</nav>
+		<div>
+			<article> 
+				<h1> Manage Privileged Credentials </h1>
+				<p style="margin-right: 45px;"> Automatically discover and onboard privileged credentials and secrets used by human and non-human identities. Centralized policy management allows administrators to set policies for password complexity, frequency of password rotations, which users may access which safes, and more. Automated password rotation helps strengthen security while eliminating time-intensive, manual processes for the IT teams. </p>
+			</article>
+			<article> 
+				<h1> Isolate & Monitor Sessions </h1>
+				<p> Maintain compliance with recorded key events and tamper-resistant audits. Establish secure, isolated remote sessions and record all activity during that session. End users never directly connect to target systems, reducing the risk of malware. Session recordings are securely and centrally stored to make it easy for security, audit and compliance to increase accountability and compliance. </p>
+			</article>
+		</div>
+		<footer style="background-color: #9904ba; width: 100%; font-size: 30px; padding: 10px 0px"> 
+			<center> &#169; CyberArk <center>
+		</footer>
+	</body>
+</html>

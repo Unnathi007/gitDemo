@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<title> Sample Web Page </title>
+		<style>
+			label {
+				padding-right: 10px;
+			}
+			ul li {
+				display: inline;
+				font-size: 20px;
+				padding-left: 14.6%;
+				padding-right: 14.6%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			ul li:hover{
+				background-color: #9904ba;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			body{  
+			  font-family: Calibri, Helvetica, sans-serif;  
+			  background-color: pink;  
+			}  
+			.container {  
+				padding: 50px;  
+			  background-color: lightblue;  
+			}  
+			  
+			input[type=text], input[type=password], textarea, input[type=email], input[type="number"], select {  
+			  padding: 15px;  
+			  margin: 5px 0 22px 0;  
+			  display: inline-block;  
+			  border: none;  
+			  background: #f1f1f1;  
+			} 
+			input[type=text], input[type=password], textarea, input[type=email] {
+				width: 100%;  
+			}
+			input[type=text]:focus, input[type=password]:focus {  
+			  background-color: orange;  
+			  outline: none;  
+			}  
+			div {  
+				padding: 10px 0;  
+			}  
+			hr {  
+			  border: 1px solid #f1f1f1;  
+			  margin-bottom: 25px;  
+			}  
+			.registerbtn {  
+			  background-color: #4CAF50;  
+			  color: white;  
+			  padding: 16px 20px;  
+			  margin: 8px 0;  
+			  border: none;  
+			  cursor: pointer;  
+			  width: 100%;  
+			  opacity: 0.9;  
+			}  
+			.registerbtn:hover {  
+			  opacity: 1;  
+			}  
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+			  -webkit-appearance: none;
+			  margin: 0;
+			}
+			.activeLink {
+				background-color: #9904ba;
+			}
+		</style>
+	</head>
+	<body>
+		<header style="background-color: #9904ba"> 
+			<center> <img src="Logo.png" width="200px" height="200px"> </center> 
+		</header>
+		<nav> 
+			<ul style="list-style-type: none; background-color: #681b8c; padding: 20px;">
+				<li> <a href="home.html">Home</a> </li>
+				<li class="activeLink"> <a href="register.html">Register</a> </li>
+				<li> <a href="login.html">Login</a> </li>
+			</ul>			
+		</nav>
+
+	<form action = "Login.html">  
+		<div class="container">  
+		  <center>  <h1> Student Registeration Form</h1> </center>  
+		  <hr>  
+		  <label> Firstname </label>   
+		  <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+		  <label> Middlename: </label>   
+		  <input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+		  <label> Lastname: </label>    
+		  <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+		  <div>  
+			<label> Course : </label>   
+			<select required>  
+				<option value="Course" >Course</option>  
+				<option value="BCA">BCA</option>  
+				<option value="BBA">BBA</option>  
+				<option value="B.Tech">B.Tech</option>  
+				<option value="MBA">MBA</option>  
+				<option value="MCA">MCA</option>  
+				<option value="M.Tech">M.Tech</option>  
+			</select>  
+		  </div>  
+		  <div>  
+			<label>Gender :  </label> 
+			<input type="radio" value="Male" name="gender" checked> Male   
+			<input type="radio" value="Female" name="gender"> Female   
+			<input type="radio" value="Other" name="gender"> Other  
+		  </div>  <br>
+		<label>Phone :</label>  
+		<input type="number" name="country code" placeholder="+91" size="4" style="width: 60px"/>   
+		<input type="number" name="phone" placeholder="phone no." size="10" pattern="[7-9]{1}[0-9]{9}" style="width: 90.5%" required /><br>   
+		Current Address :  
+		<textarea cols="80" rows="5" placeholder="Current Address" value="address" required >  </textarea>  
+	    <label for="email"><b>Email</b></label>  
+	    <input type="email" placeholder="Enter Email" name="email" required/>  
+		  
+		<label for="psw"><b>Password</b></label>  
+		<input type="password" placeholder="Enter Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" name="psw" required>  
+	  
+		<label for="psw-repeat"><b>Re-type Password</b></label>  
+		<input type="password" placeholder="Retype Password" name="psw-repeat" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" required>  
+		<button type="submit" class="registerbtn">Register</button>  
+		</div>
+	</form>  
+
+	<footer style="background-color: #9904ba; width: 100%; font-size: 30px; padding: 10px 0px;">
+	  <center>&#169; CyberArk</center>
+	</footer>
+</html>
