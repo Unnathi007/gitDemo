@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        footer{
+        bottom:0px;
+        background-color: bisque;
+        height:50px;
+        width:99%;
+        position: absolute;
+        padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div align="center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfcAAABkCAMAAACsLolMAAAA51BMVEX///8vdLEjHyBNj8yAgoVYWVsAAAArcrAbFxjt7e0dGRpJRkfu9PkRCgxSir37/P5gk8KSkZFYVVaEg4Pn7/ZLhbrCwcEIAAAfba4XEROjoqNnmMW6ublkm89RT1Cvrq/Pz8+ivtvk4+N3dXa/z+ODqs5mZGU+apY8e7SOsdOswdpBicooJCU3NDUvKyxSks17qtjU4u7Y19hiYGGdnJxLSEnJ2+6Wut+PjY4AZaqFqs5todTQ4PCNtNx0nsilxORrg5uBjJdchq9VhbJqcHZmeItyjqtsampseopngp6Jk5p9jqJ4en5rosjRAAARbklEQVR4nO2dfUPiOhbGAZUAUopQpAVfeNMLKjqAOo7XYXbv7l7v7vX7f55tSdrmJOe0QRzfps9fMyVNa39Ncs7JSZrLGevhy8QxL53pc8j5vnXots7st76PTK8p+8fW+dYhY2799q1vJdOryR4dnm9t+dzzecaWs7e+nUyvo9mXgDrn7oPP97PO/heQI6gL7r7cfDbMf3bZP65C7BF3n3z94a1vLNPPFB/YNe555p5kw/yn1ex3iTrgHnT2k+pb31+mn6Hq9y2AHXL3ybfO3voWM724qj/OIXWNu9/ZtzJv/pPp9lClrnP3yedPstDtJ9Lsi04d4+43+fwk8+k+iRx1YKe5r4b5UUb+M+jsCqVOcffbfDfz6T68bvG2nsA9IL/MhvkPLecLBT2Ju9/Zj7Og/ceV81Xz3Qy5Bz7d6K1vP9OzVP1BDewG3IOJulo2zL972c7MgXHWh9+TqadxD7z5+yx0+75VXZ70J/KkGu6xr8fd7+zdfkb+HWtWc2zfDlv2xf+rX1O6eDPuAfpaFrp9v+rO7PpJ18lxx9se0b7butz9Nl/Phvl3qtky59RzZ/e50cSnjoXin899Ncxn3vy71NlZzmmdLUc5x38BvhtSN+buN/nMm3+XOuvnnFrdb+tON9e9ujLlvhwbNviM+/uUj9up261Z8ALU8zUz8Ff/ePrnH3kT0858ctYe7B9f3zX3jvcH+oticyWcrZWwUaXXQMmgrOFfmjM7Z/2LGN4uP7i8tSf2bd+uO7k6Y2MD8ld/PDaG282//+WmOfHGdt2gc1ooFtuWr3ax6A2PB+Dng5vGSosycX7ziBdoREeuwyNQzc7BAK2hd4OWj3Qqn7ZXufR1MVXKDK/38cqhlnVJdLPo1zF1Tyb9EX5SVaq4JkVMZ7CGJXevne7Z6je/YJ35DTSN/FX93zs7O8Pt7eb238mdvWvox9m9xwvLK0jyrItGTy6ya5UCtYd4Dfv851L7IDrUbJcweW3vcvcAeX32i2j56LxLwL29us2KVnnlctFLa/Yzl8VyJ2S5E7mcLNdvnX0EvdOSyvSjw9UxqOhb+IvdX56crCbR6hxj6zAB++F/Fg3O3Sf/zz8ZPS/HDOM289M2gC7Qt4fzuExPlCj1sBrs3dLqV0t6LZqWXqdQpbi7r9WxXyTLr86ZAu5k5RWvvUhp8/eu/JjG5EMC5bSnO9ZzXHzucZuLuZ+AetylfAavox6eRzb5+j9W1AV3n/z/iGHed+DMhju7WUSor8gXr+Ni10Xx+LFam6L5XcjHaO4B+Se1nhfirt63Lgc+MAmQopME7sGJY7U3xblPFOzIA4y4E8P81Z+nnHrEPWjzLZ08Y8YD+2ObfoLWMLrJsEm39/Q6eqJ4SW7Fidz9qh+VSl6Ou0++k/AXQw551qLaR1J75w9ZmfVEuY+AEcZaWPcScffrbOk+3R//DqlL3Le37/5uwd5+jXnY8jR6ghXPKq7U9krhsXYjetoh3Iu5VslUvBJN+aDg7rVlWXHVaqMMuVdwKeO7JW4ZKq78mPyLq2O13VLPKqW9B6fC5HWM+ww0SjZGLcI6wKeQr/+1I0ni7ht4f8oG3hoe+2A37OMr7elj56A3KPveXLNxYYUQevGz5h2Dd6NWIn4o7QJrjXP3PYOOpObwqBCNKvAFEtwvjwgtdO6VRhNouHMZ3vel/nYK9VWarE48rXTuLA96VYS7fMjXGO+FIXcmG3hX/z1tUNyDzv6PsMmvlWd1Gj6n4oXsudlzPuiXZDPOvuHNqXgA65gLjBa01Tj3ttrw7N5CNGwLdA+CuzcsU5ILc+5trTufD4sV4u0Mr99SB0XGiPWF6dz9d0Y+AeFeBzbkN6JrqSv3xEIDTxrYUe6BgfevoEfxqa8xE3MnxnbvUusXB8N2wdsFlvHcE20J2stTfOAnuPvqhL4BaGchd6Mbp7j71Vxy8MUefuaZDhPCi4VzV9YpyT29zh1UwRi1pknlHnjzh1fBwL6jSuXuy/fm18uj7gnsVgPrFTuVS8XNFqOqBdh0xDi+oxSmuUcjBuggXoh77kDcD16RrT3igBHeQQJo40jAlmJ1yU7TuJ+BsnSoALupfKv2V0PDjnFv3v25VijebvCGZx3hUbie6geHJ8jABsKWKqqFE7jnxOsGsL0U99yQj/1T9I+6xeId7B69iGTPs5pTFXJul9L7wJjUvarcH4ApDxx3KJQ7+w3BjnHf3t5bawbmWLQMAjuiufDTJQtuIV4FzWVO4t5cnWSBc16Mu7A3iqhlJz1h6VnjVrbU3qHtJzt4svuvcJ+NYc9Aw0G5538W9ykfCUuk6atLGASxD3YssDe0KydxP2j/RO7lRom8svNNasJocE0S4C673VWJr2wcKNyhTYe/W1wbczduub563K62EoNbisKePnTvBiKKV9EvnMT9+GdyD3uTO+QnuaU6cnPEoin3Ml1QAPiC8WHIHYaD80lO1qtyF1baxVp9xJyfVDri/x0KCwGhm8T91NPPeg3uThyzYUuZHmpp31PtPXcrd/RS9XI/UIMsE2fIXpN72B2u09xz0dvCA2K83eox10AJ3AfCngcDzItzb+q/SCFad+SPvzElLFhL9vO5mcw9PhMEacDYTjnuQq/JfcCbKh3YInRU4uayb7+XC5Xo35po7nNeRQmGVl6Mu31aIn6UQ7Rj//9dqVtGwGzU3oEYOffD9Zrc+fBeWqybhNWLnXgRglcDeFyCu/bbYO+Sv3FtGN97Me4Dbq8igRspZrOy5CR8rKtXRLd3eYRg8WGKu3uS8ue8Jnf+6FDrJ1kdYQ8eiIi6haPi3Cs3p0C7xaIlAmoKtH3xHvYIgfczibuICl1onZAcol0FyqUDWLCWtOtM7Hm5tdOOu9BrcucmGW53JYsHZis3vF1VdvE0hyY6ZcaZ+3w99YVLno8rXRjF530NRID+VOvIRlrzltotElW5J/z36tLAf5ewo1OvQK/JfVEiesNU9UJAhaQaEuffS3rCTfL8e8WU+1xMFyAzsdLTdbl57UjRu2+aoyU7Yq3+WajJGFhvRLxOwp4+Tfaa3Hc493XNukDXUqqG1m5DJXGv7OpJcCl5F0bc7cHdBcdeudRuSArRRua7/Cpo0XMQn3cjwWwdkDWFcXcNchy7xtyPHp+MuT+gM3TPb+85O5q1L5TwMHguLc/KG6qjwzO4lx7luf3OXXNRCC+q25O5pWLVBZK7fq1dmszDfpOfLd7e6+lZjsbcj/bKvT2dPBandZa488hjJ0U9wdFA8wiHR/YXgnvJkuWVwgHeU6/8DO6FEkzmschknhwM0UbBs2pSsNYg7wIm3ODju1tLdZkMuR8Ne37h8oEBd3sydvFEoufbdbnIZi5YSLadEOdeWtyBjJjGNGySlQLmx2mpU0JWBeNO9SZozEaywWOnTYrksLFyRip35sLcVcKed1MzXI24H+0ciHrKx08p3EctfzjCud9ZKeCSZC+ETU8XoeI2vT1PxPgLACXnXmkcEEL8OIp6BbH3pBBt3o19tqpsmivPKY07U3sI0n+nc/S5DLg3djrS45pfPyVwn9VXpgzO/WCdOImm69S3ho7XBak8q7OBSfiMuA2mUnGqmQ6BQMM+mUQay644fHzJ3JG1SGS8js7V5krnfvMEB1R7f/uJ4G7fixgxzn3O29fuOlM5sTbhnsuJ3G1PvvZzuEeDQjiwV9qNDhpOsOUsWiYZ5yAzAsZuErkzZFUKHaclc3a50rjzgV35iw5Q7nafhR4HftEyD7u0n2XYbcjdRuaEnsG9cvMotBDYp9QJSFodggcm2sncVyuc5LLYMhtyXkbLuFaUzN0f2NHGOejo3G9rYOoJEzfsvNOkGyK1GfdcZ9XgSwvp0DO4W9fRSlOREOIRCzftGtESoWCasxyfH3d9gYAN0nUr87BgRi6flO6axL1xdE12yXPh04XcnaUcXSC4i4TItskKUk0bch/og8yG8zJi6GgPUdt5ZNLcA8tbPknLs5rJINXFMjk17wIm6jMidX6lBO6N7SQ+9v7dU8S9OsnDJVk493Ji4mmKNuRuvzh3eyjmCREXjgqEIuDl3lufj+uDnl+Lvyp5VksIPiFeS3I/2tlP8QHLB8Mnzt333ZQ/hjAqHkWDf44LvyF3xKjcdB62LIKI6jxfoAeTLSIErVjIPKwMSE+UVLhX6xA8Hb8huB8tTNCUO08+94eWthkCxX1wwa0hD50/D6Ld9MU25C7ssiPp0Mbz7xF4PVa3NOvmlexHhHsVrEdTp/DUPGplbY5LZtSi3NlvptMt846zRN5s0omIli+jNr39iCyBDLUZ9zn3JTw5P2vzvIv5BQ8CW+qf45hih3Y3lncxSjKctHUTMJMaTe5YCeXeOjTdfdDu57GdT0juZbGmqILx6+1apcsedamNuM8LYmmVzO0F8m3mYahXAQ9WPmMbWEi/SsFaNN8GrqKGtpq+TuoBvnFU4E7jLtZJfTFZ82aPxvh+N3TQoBfOklhHios4X1R8NqVLyrt/Nne73HssiMtWkLjNI7kuUu4kiXnYY/Eew/cVJEyPl11VS+B2xw8Lz7MChWFKBbIucgS9fgK8yj1cF3m+9TV1TsfpUrscJQSL9sJJsFJxdy96WIPjYSGMoRPgTbl7QzBVen33uBttqgITtMJ10De7hHpSYSrvQuzKAWeHZSscjZ/M4qm6PIv3o8C5P4BHC4Z4bP375JtcHvP+cip3eR30+daPRPLQYzfmHj6oVWdfLE4XPAUu3u+m+Ihf1pS7uu+BFWVaqVP3KfselMBmGmS+zZ24qlS3TTfQUHIbjoO1RF4lCP0BBwDd7wIODHhGNeQO9z04/50e5u3+OMF0SQwOX8cggv2hvHiGnDdJwqQ05k6qUkHnYWkZcRerIgtevKGazInh/SwoEjVhKp8WrIuUF0Tg+9vU0+M3MXdsI7tzapi/1X03Y+65fY8E5NFrqDbmbl30lPt4Ge72QkQlQl8BrHzWk+hWghZA+JQp7sCZYyz+BederUHwyIqpiDu+r9H51nekmxKzrc/lnis3C+iGVhUPXRbPtSF3r7JunpUp91z5RqzdEtaDvMaB1Yibvcf6BDJ/HoSBWDf6idjHrKp4c3riVcid1YiNas+vfiin2JN8CvY07oHxXlR3sCtZxWlSiHCvHQy62OZWoVDuwQZFXrsItsYT2i8SIzs2vt+tLo+F5vy/5tJbnSBm++rSpoHkk5h9k9068XfL+xbWAKsJvvMhsW9h8J6AbQ81N15wT9q38PzqVk7lPnPT9io14O43kuvTC5+9P7j7D8yziheN2LpH1eE2dsJ+YU2sE5ne3Jw2O2jVvSllyCP2/PXqyJSY9BE1rZaAzWqSumSK41IqFX5iedKKjym7znXlWqNP+ThdvZKVblugvPYN567JPqWSN39bS6duxD0Iyvauh4uj3elNY3jdG6RFCG3dp1ZUHmCiT7FJxx3x35FD+q+rn+2qLPJuq0ixhDNhrTZWi01XX1Xvu2u2L/H595VpMEvw3dbmnukN1TXch9wf5qvOxHiSKeP+zrXcMv3uwPmXZN9NVsri60xvrp/xnRGWfW/iAyj9g4FCv5txZyz7SvDH0Mjk63GG3JmbfS70wyj107Cm3Blba/fKTG8tk++EpnJnrjvJvhP6wZQ+zKdxZ+wko/7xZKcN86nfASc21870zlX9cZ5EPpG7O05clpPpXcv58jzuDPnUUaaPpAe6sye5M7ebeewfXiPq+9AEd+bWs4H9M6j6Ff8ePMqd+QN71sV/EjmoN49wZ4xlHvtnEubN69yzUPynk637dCr3Nb4VmOnjyFaHecjdp5557J9TijcPuLv5bGD/vLqVfTqJ+3rfCsz04WT/iMnH3N266TrpTB9VzvfQwBPcmcuyNKpfQaE3z7m7LAvF/yKy+TAfcGesmw3sv47sIBHrkDG3lnnsv5aqX7cOs1D8r6jZ90kWlP0s+j+eSBGJIj4zTwAAAABJRU5ErkJggg==" height="60px;"></div>
+    </header>        
+    <nav>
+            
+            <div class="topnav" style="display:inline-block">           
+                <a class="active" href="demo1.html">Home</a>
+                <a href="Register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="play.html">MyPlaylist</a>
+                
+                <a href="videos.html">videos</a>
+                
+              </div>
+        </nav>
+    
+    <main>
+        <section>
+        <article>
+            <h1>London</h1>
+            <h3>article1</h3>
+            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+          </article>
+          <article>
+              <h3>article2</h3>
+            London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+
+            Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
+          </article>
+        </section>
+    </main>
+    <footer class="foot">
+        Footer
+    </footer>
+</body>
+
+</html>

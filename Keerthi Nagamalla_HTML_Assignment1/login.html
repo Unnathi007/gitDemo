@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    footer{
+        bottom:0px;
+        background-color: bisque;
+        height:50px;
+        width:98%;
+        position: absolute;
+        padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div align="center"><img src="img1.png" height="60px;"></div>
+    </header>        
+    <nav>
+            
+            <div class="topnav" style="display:inline-block">           
+                <a class="active" href="demo1.html">Home</a>
+                <a href="Register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="play.html">MyPlaylist</a>
+                <a href="videos.html">videos</a>
+                
+              </div>
+        </nav> 
+        <form onsubmit="myfun()" action="newtab.html">
+          UserName :  
+          </label>     
+          <input id ="phne" type="text" name="phone" placeholder="username" size="10" required minlength="6">
+          <label for="psw"><b>Password</b></label>  
+              <input type="password" placeholder="Enter Password" name="psw" required  minlength="8">
+              <button type="submit" class="registerbtn" onsubmit="myfun()">
+            Login</button>
+        </form>
+        <script>
+            function myfun(){
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("user",document.getElementById("phne").value);
+                console.log(localStorage.username);
+                
+  
+} else {
+    alert("Sorry, your browser does not support Web Storage...");
+}
+            }
+</script>
+    <footer class="foot">
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
