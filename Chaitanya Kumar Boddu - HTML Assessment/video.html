@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+</head>
+<body>
+    <header>
+        <center>
+        <table>
+        <tr>
+           <td> <img src="images/imgf.PNG" alt =""></td>
+           <td><h1>WELCOME TO CYBERARK</h1></td>
+        </tr>
+        </table>
+        </center>
+    </header>
+    <center>
+   
+    
+    <ul style="list-style: none">
+        <li>Video Files
+          <ul id="list">
+            <li><a href="#" data-value="videos/v1.mp4">Video 1</a></li>
+            <li><a href="#" data-value="videos/v2.mp4">Video 2</a></li>
+            <li><a href="#" data-value="videos/v1.mp4">Video 3</a></li>
+            <li><a href="#" data-value="videos/v2.mp4">Video 4</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      
+      <video id = "video" width="550" height="340" controls>
+        <source id = "videoSource" src="" type="video/mp4">
+        
+      Your browser does not support the video tag.
+      </video>
+
+<script>
+    list.onclick = function(e) {
+    e.preventDefault();
+  
+    var elm = e.target;
+    var video = document.getElementById('video');
+  
+    var source = document.getElementById('videoSource');
+    source.src = elm.getAttribute('data-value');
+  
+    video.load(); //call this to just preload the audio without playing
+    video.play(); //call this to play the song right away
+  };
+</script>
+    <footer>
+        <center><h6>COPYRIGHTS @ CYBERARK 2022</h6></center>
+     </footer>
+</body>
+</html>
