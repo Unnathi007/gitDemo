@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul >
+        <li><input type="submit" onclick = "myFunction('audio1.mp3')" class="submit" value = "audio1"></li>
+        <li><input type="submit" onclick = "myFunction('audio2.mp3')" class="submit" value = "audio2"></li>
+        <li><input type="submit" onclick = "myFunction('audio3.mp3')" class="submit" value = "audio3"></li>
+        <li><input type="submit" onclick = "myFunction('audio4.mp3')" class="submit" value = "audio4"></li>
+    </ul>
+
+    <audio id = "audioId" controls>
+        
+      
+      </audio>
+
+    
+
+      <script>
+          function myFunction(audioName)
+          {
+            var audio = document.getElementById("audioId");
+            audio.src = audioName;
+            audio.load();
+            audio.play();
+          }
+      </script>
+</body>
+</html>
