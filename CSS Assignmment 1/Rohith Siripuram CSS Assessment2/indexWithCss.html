@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+      header{
+        width: 100%;
+        height: 100px;
+        /* border: solid 2px; */
+      }
+
+      footer{
+        width: 100%;
+        height: 100px;
+        background-color: grey;
+        /* border: solid 2px; */
+        text-align: center;
+      }
+
+      #logo{
+        padding: 20px;
+        width: 250px;
+        height: 50px;
+        /* border: solid 2px; */
+        display: inline-block;
+      }
+
+      #imgLogo{
+        width: 100%;
+        height: 100%;
+      }
+
+      nav{
+        margin-top: 20px;
+        width: 100%;
+        height: 75px;
+        background-color: rgb(19, 166, 230);
+        /* border: solid 2px; */
+      }
+
+      #login{
+        position: relative;
+        font-size: 20px;
+        top: 40%;
+        right: 5%;
+        float: right; 
+        /* border: solid 2px; */
+      }
+
+      #icon{
+        position: relative;
+        top: 30%;
+        padding-left: 100px;
+      }
+      #icontxt{
+        position: relative;
+        top: 23%;
+        
+      }
+
+      #row{
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      
+      #col{
+        width: 40%;
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <span>
+          <div id="logo">
+            <a href="#"><img id="imgLogo" src="./res/images.png"></a>
+          </div>  
+        </span>
+        
+    </header>
+    <nav>
+      <span>
+        <i id="icon" class="material-icons">home</i>
+        <span id="icontxt"><a style="color: black;" href="index.html"><b>Home</b></a></span>
+      </span>
+      <span>
+        <i id="icon" class="material-icons">login</i>
+        <span id="icontxt"><a style="color: black;" href="index.html"><b>Login</b></a></span>
+      </span>
+      <span>
+        <i id="icon" class="material-icons">login</i>
+        <span id="icontxt"><a style="color: black;" href="index.html"><b>Register</b></a></span>
+      </span><span>
+        <i id="icon" class="material-icons">list</i>
+        <span id="icontxt"><a style="color: black;" href="index.html"><b>Playlist</b></a></span>
+      </span>
+
+    </nav>
+    
+    <section id="row">
+      <span id="col">
+        <h3>UNIFIED IDENTITY SECURITY PLATFORM</h3>
+        <p>Built for the dynamic enterprise, the CyberArk Identity Security Platform enables secure access for any identity — human or machine — to any resource or environment from anywhere, using any device.</p>
+      </span>
+      <span id="col">
+        <h3>Workforce and Customer Access</h3>
+        <p>When everything is transforming digitally – from your industry to the threats you face – you need access management solutions designed to outpace any security risks that challenge your ability to compete.</p>
+      </span>
+    </section>
+    <footer>
+      <br>
+        <p>Copyright © 2022 CyberArk Software Ltd.</p>
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>

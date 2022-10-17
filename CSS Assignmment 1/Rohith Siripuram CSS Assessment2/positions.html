@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainDiv{
+            border: 2px solid;
+            width: 1000px;
+            height: 400px;
+            margin:100px;
+            background-color: grey;
+            position: absolute;
+        }
+
+        #innerDivFixed{
+            position: fixed;
+            text-align: center;
+            top: 20%;
+            left: 20%;
+            border: solid 2px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        #innerDivRelative{
+            position: relative;
+            text-align: center;
+            top: 20%;
+            left: 50%;
+            border: solid 2px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id="mainDiv">
+        <div id="innerDivRelative">
+            <br><br>
+            Relative
+        </div>
+
+        <div id="innerDivFixed">
+            <br><br>
+            Fixed
+        </div>
+    </div>
+</body>
+</html>
