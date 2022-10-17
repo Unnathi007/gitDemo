@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph</title>
+    <style>
+        select option[value="1"]{
+      background-color: yellow;
+  }
+  select option[value="2"]{
+      background-color: blue;
+  }
+
+ select option[value="3"]{
+      background-color: green;
+  }
+
+    #id1 p:nth-child(4){
+           background-color: rgb(128, 234, 128);
+       }
+    #id2 p:nth-child(odd){
+            background-color: rgb(242, 186, 244);
+        }
+ 
+    #id2 p:nth-child(even){
+            background-color: rgb(161, 205, 232);
+        }
+
+    input[type=text]:focus{
+    background-color: rgb(154, 82, 176);
+    }
+
+    th{
+        background-color: chocolate;
+        background-image: rose.jpg;
+    }
+    tr:nth-child(odd){
+        background-color: rgb(242, 186, 244);
+    }
+    tr:nth-child(even){
+        background-color: rgb(161, 205, 232);
+    }
+    </style>
+</head>
+<body>
+
+    <table border="2">
+        <tr id="id3">
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Teja Sree</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+
+    </table>
+    <select name="" id="">
+        <option value="1">india</option>
+        <option value="2">china</option>
+        <option value="3">pakisthan</option>
+     </select>
+     
+     <input type="text" placeholder="Name">
+     <br>
+     <div id="id1">
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+    </div>
+
+
+<div id="id2">
+    <p>para1</p>
+    <p>para2</p>
+    <p>para3</p>
+    <p>para4</p>
+    <p>para5</p>
+    <p>para6</p>
+ </div>
+ 
+ 
+ 
+
+
+</body>
+</html>

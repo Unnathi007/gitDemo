@@ -1,0 +1,15 @@
+div p{
+    background-color: pink;
+}
+
+div >p{
+    background-color: green;
+}
+
+div ~p{
+    background-color: blueviolet;
+}
+
+div +p{
+    background-color: chocolate;
+}

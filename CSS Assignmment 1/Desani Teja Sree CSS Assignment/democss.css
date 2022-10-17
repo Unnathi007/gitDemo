@@ -1,0 +1,59 @@
+h1, h3{
+    color: rgb(237, 228, 228);
+    background-color: rgb(4, 4, 5);
+}
+
+#input1{
+    color: blue;
+}
+#input2{
+    color: brown;
+}
+
+p{
+    color: rgb(208, 131, 36);
+    background-color: rgb(27, 27, 136);
+    padding: 50px;
+    font-style: italic;
+}
+#p1{
+    text-align: left;
+    color: aquamarine;
+    background-color: rgb(93, 21, 160);
+    padding: 30px;
+    font-style: oblique;
+}
+
+#p2{
+    text-align: right;
+    color: rgb(75, 75, 143);
+    background-color: rgb(221, 177, 16);
+    padding: 20px;
+    font-style: inherit;
+}
+
+#p3{
+    text-align: center;
+    color: rgb(5, 18, 7);
+    background-color: rgb(189, 74, 21);
+    padding: 40px;
+    font-style: unset;
+}
+
+[title^="title1"]{
+    font-size: medium;
+    background-color: yellow;
+    font-style: italic;
+    padding: 15px;
+}
+
+input[type=text]{
+    background-color: blanchedalmond;
+    font-style: italic;
+}
+
+input[type=number],input[type=color]{
+    background-color:aqua;
+}
+
+
