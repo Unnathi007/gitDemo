@@ -1,0 +1,48 @@
+#t1{
+    background-color: red;
+    color: yellow;
+}
+
+#t2{
+    background-color: blue;
+    color: cyan;
+}
+
+#t3{
+    background-color: green;
+    color: magenta;
+}
+
+
+p{
+
+    background-color: black;
+    color: white;
+}
+
+#p1{
+    text-align:center;
+    background-color: yellow;
+    color: red;
+}
+
+#p2{
+    text-align: left;
+    background-color: cyan;
+    color: blue;
+}
+
+#p3{
+    text-align: right;
+    background-color: magenta;
+    color: green;
+}
+
+.class-1{
+    background-color: red;
+    color: black;
+}
+
+[title]{
+    color: red;
+}
