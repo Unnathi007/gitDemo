@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0px;
+            border:0px;
+            margin: 0px;
+        }
+
+        header{
+            padding: 20px;
+            font-size: 250%;
+            background-color: cyan;
+            text-align: center;
+        }
+
+        nav{
+            font-size: 150%;
+            background-color: aquamarine;
+            padding-right: 50px;
+            padding-left: 5px;
+        }
+
+        article{
+            float:right;
+            width:50%;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        input[type=text], input[type=password], textarea, input[type=email], input[type=tel] {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+} 
+
+form {  
+    padding: 50px;  
+  background-color: lightblue;  
+}
+
+ div {  
+            padding: 10px 0;  
+         }  
+  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MOVIERULZ</h1>
+    </header>
+    <hr>
+    <nav>
+        <a href="Login.html">Login</a>
+        <a href="Signup.html">Sign up</a>
+        <a href="demo.html">Home</a>
+    </nav>
+    <hr>
+    <center><h1>Login</h1></center>
+    <br>
+    <br>
+    <form action="displayName.html" method="GET">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <button type="submit" class="registerbtn" onClick="store();">Login</button>
+    </form>
+    <hr>
+    <footer>
+        <h2>copyrights reserved @myself</h2>
+    </footer>
+    <script>
+        function store(){
+        if(typeof(Storage)!=="undefined"){
+            localStorage.setItem("username", document.getElementById("username").value);
+        }
+    }
+    </script>
+</body>
+</html>

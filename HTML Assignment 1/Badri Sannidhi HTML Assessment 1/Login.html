@@ -1,0 +1,101 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.loginbtn:hover {  
+  opacity: 1;  
+} 
+nav a{
+            padding : 25px;
+}
+header{
+            background-color: aqua;
+} 
+footer{
+
+position: absolute;
+
+background:rgba(204, 248, 204, 0.6);
+
+height: 50px;
+
+bottom: 0px;
+
+width: 1500px;
+
+}
+</style>
+</head>  
+<body>
+  <script>
+    function set1()
+    {
+    sessionStorage.setItem("Username",document.getElementById("Username").value);
+    }
+  </script>
+    <header>
+        <center><h1>CyberArk</h1></center><br/><br/>
+    </header>
+    <nav>
+        <a href="Home.html"> Home </a>
+        <a>Products</a>
+        <a href="Register.html"> Register</a>
+        <a href="Login.html">Login</a>
+    </nav><br/><br/>    
+<center>
+    <h3>Login Page</h3>
+</center>
+<div class="container">
+<form  onSubmit="set1()" action="Hello user.html">
+<label> UserName </label>   
+<input type="text" name="Username" id="Username" placeholder= "username" size="15" required />
+<br/><br/>
+<label for="psw"><b>Password</b></label>  
+<input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Enter Password" name="psw" required><br/><br/>
+<button type="submit" class="loginbtn">Login</button>
+</form>
+</div>
+<footer>
+    <h3>Copyrights to CyberArk 2022</h3>
+    </footer>
+</body>
+</html>
