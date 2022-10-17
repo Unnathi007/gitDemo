@@ -1,0 +1,77 @@
+html { 
+    background: url("bg_image.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100% ;
+}
+
+* {
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.fill_div{
+    opacity: 0.5;
+    background-color: #3b3b3b;
+}
+
+
+
+.side{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+    
+}
+.other_half{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+img {
+    position: relative;
+    align-content: center;
+    margin: 40% 35%;
+    opacity: 0.95;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+
+.con_text{
+    margin-left: 20%;
+    margin-top: 8%;
+    /* margin-top: 25%; */
+    align-items: center;
+    color: aliceblue;
+    padding-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.con_text h1 {
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: xx-large;
+    height: 50%;   
+}
+
+.con_text h3{
+    text-overflow:initial;
+    font-size: medium;
+}
+
+footer {
+    opacity: 1;
+    bottom: 0;
+}
