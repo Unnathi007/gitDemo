@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PsuedoElements</title>
+    <style>
+        p::first-line{
+            color: rgb(30, 0, 139);
+        }
+        p::first-letter{
+            color:rgb(34, 113, 178);
+            font-size: 300px;
+        }
+        div{
+            padding-left: 10px;
+            padding: right 10px ;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: aliceblue;
+
+        }  
+        audio{
+            display: none;
+        }
+        p{
+            top:20px;
+            left:400px;
+            z-index: 50;
+
+        }
+        li{
+            display: inline;
+            padding-left: 30px;
+        }
+       
+    </style>
+     <script src="https://kit.fontawesome.com/08a4acd5b7.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+<header>
+    <h1 style="color: blue;">Doraemon</h1>
+</header>
+<nav>
+    <ul>
+        <li><i class="fa-solid fa-hippo"></i></li>
+        <li><i class="fa-solid fa-truck"></i></li>
+    </ul>
+</nav>
+    <p>
+        Doraemon is a cute cat robot and fictional character in the Japanese manga and animated series of the same name created by Fujiko F. Fujio, the pen name of writing team Hiroshi Fujimoto and Motoo Abiko.
+        Doraemon is a cute cat robot and fictional character in the Japanese manga and animated series of the same name created by Fujiko F. Fujio, the pen name of writing team Hiroshi Fujimoto and Motoo Abiko.Doraemon is a cute cat robot and fictional character in the Japanese manga and animated series of the same name created by Fujiko F. Fujio, the pen name of writing team Hiroshi Fujimoto and Motoo Abiko.Doraemon is a cute cat robot and fictional character in the Japanese manga and animated series of the same name created by Fujiko F. Fujio, the pen name of writing team Hiroshi Fujimoto and Motoo Abiko.
+    </p>
+    <audio controls id="i1">
+        <source src="images/Doraemon-Title-Song.mp3" >
+    </audio>
+<script>
+    function play(){
+        document.getElementById("i1").play();
+    }
+</script>
+</body>
+</html>

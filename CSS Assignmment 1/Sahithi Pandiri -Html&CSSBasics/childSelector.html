@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Selectors</title>
+    <style>
+    div > p{
+        background-color:blueviolet;
+
+    }
+    /* div p{
+        background-color: cadetblue;
+    } */
+</style>
+</head>
+<body>
+    <div class="good">
+        <p>immediate child-inside parent div</p>
+        <span>
+            immediate span-parent div
+        </span>
+        <span>second span-parent div
+           <p> grandchild -div</p>
+        </span>
+        <p>penultimate child</p>
+
+    </div>
+    <div>
+        this is div1
+        <p>this is para inside second div</p>
+    </div>
+</body>
+</html>
