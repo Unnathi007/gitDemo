@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+                display: inline-block;
+                width: 600px;
+                padding: 50px;
+            }
+            @media only screen and (max-width: 500px) {
+                article {
+                display: block;
+                width: 600px;
+                padding: 50px;
+            }
+            }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        footer{
+            position: relative;
+            top:250px;
+            background-color: grey;
+            text-align: center;
+            padding: 30px;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div">
+            <img src="https://www.cyberark.com/wp-content/uploads/2021/01/cyberark-logo-dark.svg" height="50" width="300" alt="logo.png">
+        </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="playList.html">AudioPlayList</a></li>
+            <li><a href="video.html">VideoPlayList</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+    </header>
+    <section id="section1">
+        <article id="article1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec nisi ante. Suspendisse eget pharetra ante. Quisque laoreet ipsum non arcu consequat, non venenatis neque tincidunt. Cras ac posuere orci. Nunc dolor lorem, facilisis eu arcu et, scelerisque molestie mi. Ut cursus quam at enim interdum lacinia. Aenean consectetur tincidunt arcu, eget ultrices risus luctus quis. Vivamus dignissim placerat condimentum. Curabitur ut ligula in lorem fringilla rhoncus.</p>
+        </article>
+        <article id="article2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec nisi ante. Suspendisse eget pharetra ante. Quisque laoreet ipsum non arcu consequat, non venenatis neque tincidunt. Cras ac posuere orci. Nunc dolor lorem, facilisis eu arcu et, scelerisque molestie mi. Ut cursus quam at enim interdum lacinia. Aenean consectetur tincidunt arcu, eget ultrices risus luctus quis. Vivamus dignissim placerat condimentum. Curabitur ut ligula in lorem fringilla rhoncus.</p>
+        </article>
+    </section>
+    <footer>
+        <p>
+            Copyright © 2022 CyberArk Software Ltd.
+            All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

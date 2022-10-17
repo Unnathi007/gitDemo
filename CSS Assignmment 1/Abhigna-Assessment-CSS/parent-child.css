@@ -1,0 +1,14 @@
+
+
+div p{
+    background-color: aqua;
+}
+div >p{
+    background-color: brown;
+}
+div ~p{
+    background-color: blue;
+}
+div +p{
+    background-color:chartreuse;
+}

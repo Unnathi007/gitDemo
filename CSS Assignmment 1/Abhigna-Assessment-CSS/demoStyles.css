@@ -1,0 +1,50 @@
+#input1 {
+    color:red;
+}
+
+#input2{
+    color:blue;
+}
+
+.para1{
+    text-align: center;
+    color:aqua;
+    background-color: black;
+    padding:40px 50px;
+}
+#para2{
+    text-align: left;
+    color: bisque;       
+    background-color: brown;
+    padding:40px 50px;
+}
+
+#para3{
+    text-align: right;
+    color: chartreuse;
+    background-color: grey;
+    padding:40px 50px;
+}
+p{
+    color:blue;
+    background-color: bisque;
+    padding:40px 50px;
+}
+
+[title]{
+    background-color: aqua;
+}
+[title^="title2"]
+{
+    background-color: blueviolet;
+}
+
+input[type=number]{
+    color:aquamarine;
+    background-color: black;
+}
+
+input[type=text],input[type=email]{
+    color:blueviolet;
+    background-color: blanchedalmond;
+}

@@ -1,0 +1,34 @@
+a:link{
+    color:chartreuse;
+}
+a:visited{
+    color: aqua;
+}
+a:hover{
+    color:blueviolet;
+    background-color: azure;
+}
+a.active{
+    color: darkmagenta;
+}
+#div-01{
+    visibility: hidden;
+    height:100px;
+    width: 100px;
+}
+
+#div-02{
+    display: none;
+    height:100px;
+    width: 100px;
+}
+p:first-line{
+    color:pink;
+}
+p::first-letter{
+    color:blueviolet;
+    font-size:20px;
+}
+#heading-1::before{
+    content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg05BAShTEK-pVIVFnNuNfX-DduROfM903uQ&usqp=CAU);
+}

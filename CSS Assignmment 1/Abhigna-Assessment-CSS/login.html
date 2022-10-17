@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+        .container {
+            padding: 50px;
+            background-color: lightblue;
+        } 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=email],
+        input[type=number],
+        input[type=tel],
+        textarea {
+            width: 100%;
+            padding: 15px;      
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: orange;
+            outline: none;
+        }
+
+        div {
+            padding: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div">
+            <img src="https://www.cyberark.com/wp-content/uploads/2021/01/cyberark-logo-dark.svg" height="50" width="300" alt="logo.png">
+        </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="playList.html">AudioPlayList</a></li>
+            <li><a href="video.html">VideoPlayList</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+    </header>
+    <form  onsubmit="verify()">
+        <div class="container">
+            <center>
+                <h1> Student Login Form</h1>
+            </center>
+            <hr>
+            
+            <label for="email"><b>UserName</b></label>
+            <input type="text"id="email" placeholder="Enter username" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="psw" name="psw" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+
+            <button type="submit" class="registerbtn">Login</button>
+    </form>
+    <footer>
+        <p>
+            Copyright © 2022 CyberArk Software Ltd.
+            All rights reserved.
+        </p>
+    </footer>
+    <script src="../../Documents/userValid.js">
+        // function verify(){
+        //     var fn=document.getElementById("email").value;
+        //     var psw=document.getElementById('psw').value;
+        //     if (typeof(Storage) !== "undefined") {
+        //         sessionStorage.setItem("userName", fn.toString());
+        //     }
+        //     if(fn=="username@gmail.com" && psw=="password")
+        //     {
+        //         console.log("valid user");
+        //         document.write("login successful!");
+        //     }
+        //     else
+        //     {
+        //         console.log("invalid user");
+        //         document.write("login unsuccessful");
+        //     } 
+        // }
+    </script>
+    
+</body>
+
+</html>
+ 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pseudo classes.css">
+</head>
+<body>
+    <h1>Pseudo classes example</h1>
+    <a href="product1.html">click here</a>
+    <a href="product2.html">click here</a>
+    <h1>Block elements</h1>
+    <p>block element1</p>
+    <p>block element2</p>
+    <h1>Inline elements</h1>
+    <a href="#">inline element1</a>
+    <strong>strong inline element1</strong>
+    <h1>visibility</h1>
+    <div id="div1">
+        block 1
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg05BAShTEK-pVIVFnNuNfX-DduROfM903uQ&usqp=CAU" width="100" height="100" alt="penImage">
+        <button onclick="removeElement()">Remove this div</button>
+    </div>
+    <div id="div2">
+        block 2
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg05BAShTEK-pVIVFnNuNfX-DduROfM903uQ&usqp=CAU" width="100" height="100" alt="penImage">
+        <button onclick="hideElement()">hide this div</button>
+    </div>
+    <div id="div3">
+        block 3
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg05BAShTEK-pVIVFnNuNfX-DduROfM903uQ&usqp=CAU" width="100" height="100" alt="penImage">
+        <button onclick="reset()">reset all the divs</button>
+    </div>
+    <div id="div-01">
+    </div>
+    <div id="div-02"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra purus ac arcu sodales, nec pulvinar urna convallis. Quisque ac elit nisi. Phasellus lacinia tristique risus et eleifend. Ut mattis varius enim ac tempus. Donec pharetra fermentum maximus. In hac habitasse platea dictumst. Integer ac ex ac massa elementum finibus. Nullam non magna sit amet leo convallis commodo quis ut ipsum. Morbi dictum lectus eu nibh accumsan ornare. Nullam congue neque sit amet ornare rhoncus. Nam ac dolor sed libero maximus aliquet. Morbi lacinia sed elit lacinia sollicitudin. Mauris blandit purus quis porttitor hendrerit. Vestibulum blandit nunc non sapien accumsan, eget porta augue vehicula. Maecenas ornare nisi non sodales imperdiet. Donec dictum velit in quam ornare consectetur.</p>
+    <h1 id="heading-1">heading1</h1>
+    <h1 id="heading2">heading2</h1>
+    <h1 id="heading3">heading3</h1>
+    <script>
+        function removeElement(){
+            document.getElementById("div1").style.display="none";
+        }
+        function hideElement(){
+            document.getElementById("div2").style.visibility="hidden";
+        }
+        function reset(){
+            document.getElementById("div1").style.display="block";
+            document.getElementById("div2").style.visibility="visible";
+        }
+    </script>
+</body>
+</html>
