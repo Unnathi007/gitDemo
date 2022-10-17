@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+         .navbar-custom{
+            background-color: aliceblue;
+        }
+        /*--Footer---*/
+        .footer{
+            max-width:100%;
+            height:20px;
+        }
+
+        #websites{
+            width: 30px;
+            display:inline-table;
+        }
+
+        #hyperlinks{
+            width: auto;
+            font-size:15px;
+            display:inline-table;
+            padding:0 10px;
+        }
+    .login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #23463f;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}  
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+
+    </style>
+    <script>
+        function myFunction(){
+        const fname = document.getElementById('Uname').value;
+        sessionStorage.setItem('Uname',fname);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<header style="background-color: aliceblue;">
+    <center>
+    <a class="navbar-brand" href="#"></a><img class="logo" src="images/cyberark-logo-dark.svg" max-width="25%" height="40px"></a>
+    </center>
+<nav class="navbar navbar-expand-lg navbar-custom ">
+    <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+            <a class="nav-link" href="Hello.html">Home <span class="sr-only">(current)</span></a>
+        </li>    
+      <li class="nav-item active">
+        <a class="nav-link" href="Register.html">Register <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">LogIn</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</header>
+<body>
+    <h2>Login Page</h2><br>    
+    <form onsubmit="myFunction()" action="console.html">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input id="Uname" type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Forgot <a href="#"> password? </a>   
+        </div>   
+    </form>     
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<footer class="bg-light text-black text-center text-md-start">
+	<div class="container p-4">
+        <div class="row">
+			<div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+			<img class="img" src="images/cyberark-logo-dark.svg" alt="CyberArk Logo" max-width="25%" height="30px">
+			    <ul class="list-unstyled mb-0">
+                    <a href="#!" class="text-black"><img class="footer" src="images/facebook.png"></a>
+                    <a href="#!" class="text-black"><img class="footer" src="images/twitter.png"></a>
+                    <a href="#!" class="text-black"><img class="footer" src="images/youtube.png"></a>
+                    <a href="#!" class="text-black"><img class="footer" src="images/linkedin.png"></a>
+                    <a href="#!" class="text-black"><img class="footer" src="images/blog.png"></a>
+			</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+			  <h6 class="text-uppercase mb-0">Support</h6>
+			  <ul class="list-unstyled">
+				<li>
+				  <a href="#!" class="text-black">Contact Support</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Training & Certifications</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">EPM SaaS Register/Login</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Product Security</a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+			  <h6 class="text-uppercase mb-0">Company</h6>
+			  <ul class="list-unstyled">
+				<li>
+				  <a href="#!" class="text-black">Investor Relations</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Leadership</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Newsroom</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Office Locations</a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+			  <h6 class="text-uppercase mb-0">Partner</h6>
+			  <ul c
+        lass="list-unstyled">
+				<li>
+				  <a href="#!" class="text-black">Partner Network</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Partner Community</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Partner Finder</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Become a Partner</a>
+				</li>
+			  </ul>
+			</div>
+		  <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+			  <h6 class="text-uppercase mb-0">Resources</h6>
+			  <ul class="list-unstyled">
+				<li>
+				  <a href="#!" class="text-black">Resource Center</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Events</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">Blogs</a>
+				</li>
+				<li>
+				  <a href="#!" class="text-black">CISO View</a>
+				</li>
+			  </ul>
+			</div>
+			</div>
+		</div>
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  		Copyright © 2022 CyberArk Software Ltd.<br>All rights reserved.
+		</div>
+	  </footer>
+</body>
+</html>

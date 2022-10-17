@@ -1,0 +1,97 @@
+h1{
+    background-color: red;
+    color:blue;
+}
+
+#para1{
+    text-align: center;
+    color: blue;
+    background-color: yellow;
+}
+
+#para2{
+    text-align: left;
+    color: white;
+    background-color: purple;
+}
+
+#para3{
+    text-align: right;
+    color:white ;
+    background-color: black;
+}
+
+[type="Username"]{
+    background-color:black;
+}
+[type="password"]{
+    background-color:blue;
+}
+[type="email"]{
+    background-color:orange;
+}
+
+/* css in table html */
+td , th{
+    padding: 30px 50px 30px 50px;
+}
+/* Inline css for table */
+/* <body style="background-color: peachpuff;">
+<table border="2" style="border-color: brown;"> */
+
+  /* Pseudo classes html css */
+  
+a:link{
+    color:blueviolet;
+}
+a:hover{
+    color:pink;
+}
+a:visited{
+    color:red;
+}
+a:active {
+    color:yellow;
+}
+p::first-line{
+    color:blue;
+}
+p::first-letter{
+    color: red;
+}
+h1::before{
+    content: url(images/linkedin.png)
+}
+h1::after{
+    content: url(images/blog.png)
+}
+
+/* Child selector CSS */
+div > p{
+    background-color: brown;
+  }
+  div p{
+      background-color: violet;
+  }
+  /* div ~p{ 
+      background-color: yellow;
+  }*/
+  div+p{
+      background-color: yellow;
+  }
+
+/* CSS for background */
+body{
+    background-image: url(images/Endpoint_privilege_manager.webp);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+div{
+    height:500px;
+    width:100%;
+    color:red;
+    font-size:1rem;
+    background-image: url(images/Endpoint_privilege_manager.webp);
+    background-size:cover;
+    background-repeat:repeat-y;
+}
