@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>CSS Demo</title>
+ <style>
+     body{
+        font-family: 'Poppins', sans-serif;
+        background-color: turquoise;
+        text-decoration-color: coral;
+    }
+    #i1 {
+        width: 400px;
+        height:400px;
+    }
+    #i2{
+        width: 250px;
+        height:400px;
+    }
+    div{
+        display:inline-block;
+    }
+    h1 {
+  color: coral;
+}
+p{
+    font-weight: bold;
+    color:coral;
+    background-color: bisque;
+}
+
+p::first-line{
+    color: blueviolet;
+}
+
+p::first-letter{
+    color: black;
+}
+
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+
+
+#home {
+  left: 0px;
+  width: 46px;
+  background: url('images/img_navsprites.gif') 0 0;
+}
+
+#prev {
+  left: 63px;
+  width: 43px;
+  background: url('images/img_navsprites.gif') -47px 0;
+}
+
+#next {
+  left: 129px;
+  width: 43px;
+  background: url('images/img_navsprites.gif') -91px 0;
+}
+
+#wrapper {
+    display: table;
+    table-layout: fixed;
+
+    width:90%;
+    height:100px;
+    background-color:Gray;
+}
+#wrapper div {
+    display: table-cell;
+    height:100px;
+}
+ </style>
+    
+</head>
+<body>
+    <header style="background-color: black; margin: 0 0 0 0;">
+       
+            <ul id="navlist">
+                <li id="home"><a href="https://fonts.google.com/icons"></a></li>
+                <li id="prev"><a href="https://getbootstrap.com/"></a></li>
+                <li id="next"><a href="www.fb.com"></a></li>
+              </ul>    
+              <h1 style ="background-color: black; display: inline;"><center>Here is the PIXEL 7 vs Iphone 14</center></h1>
+    </header>
+   <div id = "wrapper" style="background-color:turquoise">
+    <div id = "pixel">
+      <center><img id = "i1" src = "images/pixel.jpg "> 
+      <hr/>
+       <p>Google Pixel 7 and Pixel 7 Pro goes on sale in India on Thursday via Flipkart. Both the Google smartphones are powered by the second-generation Tensor G2 SoC. The Google 7 series smartphones are offered in three different colour options and would receive five years of security updates. The Pixel 7 houses a 50MP dual rear camera setup, while the Pixel 7 Pro flaunts a triple camera setup with an additional 48MP telephoto lens. Both the handsets carry a 10.8MP selfie camera and come with an IP68 rating for dust and water resistance.</p> 
+    </center>     
+    </div>
+    
+    <div id = "iphone">
+        <center><img id = "i2" src = "images/iphone.jpg ">
+       
+        <hr/>
+          <p>Apple has continued the approach of offering identical feature sets across models in the same device class. Therefore, there are no exclusive features for the larger iPhone 14 Plus besides the display size and battery life. Note that there isn't an iPhone mini in this generation. The 5.4-inch display size was eliminated in favor of the larger 6.7-inch model, allegedly due to a lack of demand for smaller iPhones. Design Besides some slight color changes, the iPhone 14 looks nearly identical to the iPhone 13 it replaces. The notch, diagonal rear camera system, and aluminum chassis are the same. The 6.1-inch Super Retina XDR display is 460ppi.</p>  
+    
+        </center>      
+        </div>
+    </div>
+    <footer>
+      <center><p>copyrights @CK</p></center>  
+    </footer>
+</body>
+</html>

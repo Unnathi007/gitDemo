@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            background-color : blue;
+        }
+        div > p{
+            background-color : red;
+
+        }
+         div ~ p{   
+            background-color : orange;
+       } 
+        div + p{
+            background-color : green;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            This is para1.
+        </p>
+        <p>
+            This is para2.
+        </p>
+
+        <p>
+            This is para3.
+        </p>        
+        <span>
+            This is span.
+        </span>
+        <span>
+            This children.
+            <p>THis is para inside the child div.</p>
+        </span>
+    </div>
+    <div>
+        
+        <p>
+            This is para inside second paragraph.
+        </p>
+    </div>
+    <p>
+        This paragraph 1 is sibiling of Div.
+    </p>
+    <p>
+        This paragraph 2 is sibiling of Div.
+    </p>
+    <p>
+        This paragraph 3 is sibiling of Div.
+    </p>
+
+   
+
+</body>
+</html>

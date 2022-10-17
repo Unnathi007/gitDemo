@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visible Display Demo</title>
+	<!-- <style>
+	    #img1{
+		  visibility: visible;
+		  display : block;
+		  }
+		  
+		#img2{
+		  visibility: hidden;
+		  }
+		  
+		#img3{
+		  
+		  display : none;
+		  }
+		  
+	</style> -->
+</head>
+<body style = "background-color:khaki;">
+            <h3>Difference between display:none and visiblity: hidden</h3>
+<p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+<p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+    
+            <div id = "img1" >
+			   <img src = "images/s22.jpg" width="400" height="400">
+                <button onclick="removeElement()">Remove</button>			   
+			</div>
+			
+            <div id = "img2">
+			    
+			   <img src = "images/iphone.jpg" width="400" height="400">
+			   <button onclick="changeVisibility()">Hide</button>
+			</div>
+			
+			<div id = "img3">
+               <img src = "images/pixel.jpg" width="400" height="400">
+			   <button onclick="resetElement()">Reset All</button>
+            </div>			   
+        
+            
+    <script>
+function removeElement() {
+document.getElementById("img1").style.display = "none";
+}
+
+function changeVisibility() {
+document.getElementById("img2").style.visibility = "hidden";
+}
+
+function resetElement() {
+document.getElementById("img1").style.display = "block";
+document.getElementById("img2").style.visibility = "visible";
+}
+</script>
+       
+</body>
+</html>
