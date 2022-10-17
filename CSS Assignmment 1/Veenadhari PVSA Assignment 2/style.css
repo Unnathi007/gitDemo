@@ -1,0 +1,52 @@
+/* [type^="username"]{
+    background-color: red;
+}
+[type^="password"]{
+    background-color: yellow;
+}
+[type^="text"]{
+    background-color: green;
+}
+div > p{
+    background-color: skyblue;
+}
+div ~ p{
+    background-color: pink;
+}
+div + p{
+    background-color: lightsalmon;
+}
+a:link {
+    color:rgb(255, 0, 0);
+}
+a:visited {
+    color:rgb(20, 226, 37);
+} 
+a:hover {
+    color:rgb(255, 225, 0);
+}
+a:active {
+    color:rgb(0, 183, 255);
+}
+p::first-line{
+    color: bisque;
+}
+h1::before
+{
+    width: 10px;
+    height: 10px;
+} */
+#boxing{
+    box-sizing: content-box;
+    width: 300px;
+    height: 200px;
+    padding:20px;
+    border:10px solid blueviolet;
+}
+#boxing1{
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    padding:20px;
+    border:10px solid blueviolet;
+}
