@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visible and Display</title>
+	<style>
+	#first{
+	visibility:visible;
+	}
+	#second{
+	display:block;
+	}
+	</style>
+</head>
+<body> 
+  <div id="first">
+  <img src="pen.png">
+  </div>
+  <input type="button" onclick="makeVisible()" value="Click"/>
+  <div id="second">
+  <img src="book.png">
+  </div>
+  <button onclick="removeImg()">Click</button>
+  <script>
+  makeVisible(){
+  alert('in make visible')
+  document.getElementById("first").style.visibility="hidden";
+  }
+  removeImg(){
+   alert('in removeImg')
+  document.getElementById("second").style.display="none";
+  }
+  </script>
+</body>
+</html>

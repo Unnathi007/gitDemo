@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Last topic of CSS
+</title>
+<link rel="shortcut icon" href="book.ico" type="image/x-icon">
+<style>
+#leftbox {
+float:left; 
+background:Red;
+width:50%;
+height:600px;
+}
+#rightbox{
+float:right; 
+background:Green;
+width:50%;
+height:600px;
+}
+a:hover{
+color:black;
+}
+header{
+background-color:yellow;
+color:red;
+text-align:center;
+}
+nav{
+background-color:pink;
+text-align:right;
+}
+footer{
+text-align:center;
+background-color:grey;
+}
+#fixed{
+position:fixed;
+}
+</style>
+</head>
+<body>
+<header>
+<u>THIS IS THE HEADING</u><img src="pen.png" width="80px" height="80px">
+</header>
+<nav>
+<a href="#">Home</a>
+<a href="#">Menu</a>
+<a href="#">AboutUS</a>
+</nav>
+<div>
+<p id="leftbox"><i>The viewport is the user's visible area of a web page.The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.This was not perfect!! But a quick fix.</i></p>
+<p id="rightbox">The viewport is the user's visible area of a web page.The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size.Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen.This was not perfect!! But a quick fix.</p>
+</div>
+<footer>End of the HTML Document</footer>
+<p id="fixed">This is the text with fixed position in the HTML document.</p>
+<img src="pen.png">
+<img src="pen.png" style="top:300px; left:300px; position:fixed; filter:opacity(20%)">
+</body>
+</html>
