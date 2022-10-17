@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        only p tags just next to div i.e,immediate child tags are reflected
+        */
+        div > p{
+            background-color: yellow;
+        }
+        /*
+        only the first next sibling is affected
+        */
+        div + p{
+            background-color: blue;
+        }
+        /*
+        all the child tags are reflected when we use div p
+        */
+    </style>
+</head>
+<body>
+    <div class="good">this is a div with title 
+        <span>this is a span</span>
+        <p>this is a para</p>
+        <p>this is a para 1</p>
+        <p>this is a para 2</p>
+        <span>this is a span</span>
+        <span>this children div 
+            <p>this is para inside the child div </p>
+        </span>
+    </div>
+    <div> this is div1</div>
+    <p>this is para inside paragraph</p>
+    <p>this is a para 1</p>
+        <p>this is a para 2</p>
+</body>
+</html>
