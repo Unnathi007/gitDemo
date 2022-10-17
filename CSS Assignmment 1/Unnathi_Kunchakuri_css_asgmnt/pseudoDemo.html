@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        button{
+            background-color: chocolate;
+            color:white;
+        }
+        button:hover{
+            background-color:antiquewhite;
+            color:black;
+        }
+        
+        /* a{
+            text-decoration:none;;
+            color:chartreuse; 
+            border:1px solid black;
+        } */
+        
+        a:visited{
+            color:blueviolet
+        }
+        
+        a:hover{
+            color:blue;
+        }
+        
+        a:active{
+            color:cadetblue;
+        }
+        a:link{
+            text-decoration:none;
+           color:chartreuse; 
+           border:1px solid black;
+        }
+        .b:hover + .im1{
+           display:none;
+           
+        }
+        .im1{
+            display:block;
+        }
+        .b:active + .im1{
+           display:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi</h1>
+    <button >Click Me!!</button>
+    <a href="tables.html">nothing</a>
+    <a href="tables.html">nothing</a>
+    <p>asdfghjkk</p>
+    <p style="display:inline">asdfghjkk</p>
+    <p style="display:inline">asdfghjkk</p>
+    <span>sdfghj</span><p>asdfghjk</p>
+    <img style="visibility:hidden" src="img.jpg"><img style="display:none" src="img.jpg"><img src="img.jpg"><img src="img.jpg">
+
+    <hr>
+      <div class="im1">
+        <img src="img.jpg">
+        <button class="b" onclick="removeE()">Remove</button>
+      </div>
+      <div class="img2">
+        <img src="img.jpg">
+        <button onclick="removeE()">Remove</button>
+      </div>
+</body>
+</html>

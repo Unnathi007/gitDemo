@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Document</title>
+    <style>
+        .id1{
+            color:aliceblue;
+            background-color: brown;
+        }
+        #id2{
+            color:cadetblue;
+            background-color:burlywood;
+        }
+        #id3{
+            color:aliceblue;
+            background-color: brown;
+        }
+        p{
+            color:beige;
+            background-color:darkslategrey;
+        }
+        div[name^=n]{
+            color:cadetblue;
+            background-color:burlywood;
+        }
+        div>p{
+            background-color:bisque;
+        }
+    </style>
+</head>
+<body>
+    <div name="nnn">
+        <h1 style="color:darkcyan; background-color:rgb(246, 215, 205)">Heading1</h1>
+
+        <h2>Heading2</h2>
+    
+        <h3>Heading3</h3>
+    </div>
+    
+    <div>
+        <p name="n1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p class="id1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p id="id3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p name="n2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+    </div>
+    <select multiple="true">
+        <option value="1">Song1</option>
+        <option value="2">Song2</option>
+        <option value="3">Song3</option>
+    </select>
+    <div>
+        <h2>unordered</h2>
+    <ul style="list-style-type: square;">
+        <li>hi</li>
+        <li>hello</li>
+        <li>bye</li>
+    </ul>
+    </div>
+    <div>
+        <h2>ordered</h2>
+    <ol style="list-style-type:lower-alpha;">
+        <li>hi</li>
+        <li>hello</li>
+        <li>bye</li>
+    </ol>
+    </div>
+    <dl>
+
+        <dt>Coffe</dt>
+
+        <dd>Description</dd>
+
+        <dt>Tea</dt>
+
+        <dd>Description</dd>
+
+        <dt>Drink</dt>
+
+        <dd>Description</dd>
+
+    </dl>
+</body>
+</html>

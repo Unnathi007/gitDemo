@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        section{
+            width:max-content;
+            margin:auto;
+            justify-content:center;
+            align-content: center;
+        }
+        li{
+            display:inline;
+            padding:20px;
+            align-content: center;
+            margin:auto;
+        }
+        video{
+            border-radius:10px;
+            box-shadow: ivory;
+        }
+        #urike{
+            background-color: peru;
+            border-radius:10px;
+        }
+    </style>
+    <header>
+        <h1>Ur<span id="urike">Tube</span></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Movie</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Demo2.html">Register</a></li>
+        </ul>
+    </nav>
+    <main>
+       <section>
+          <h2>song1</h2>
+          <video  height=200px controls>
+            <source src="song.mp4" type="video/mp4">
+        </video>
+       </section>
+       <section>
+        <h2>song1</h2>
+        <video  height=200px controls>
+          <source src="song.mp4" type="video/mp4">
+      </video>
+     </section>
+     <section>
+        <h2>song1</h2>
+        <video  height=200px controls>
+          <source src="song.mp4" type="video/mp4">
+      </video>
+     </section>
+    </main>
+    <script>
+        document.addEventListener('play', function(e){
+      var videos = document.getElementsByTagName('video');
+      for(var i = 0, len = videos.length; i < len;i++){
+          if(videos[i] != e.target){
+              videos[i].pause();
+          }
+      }
+    }, true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div>p{
+        background-color:bisque;
+    }
+    div+p{
+        background-color:red;
+    }
+    div~p{
+        color:aqua;
+    }
+</style>
+</head>
+<body>
+    <iframe src="dropDown.html" name="g" title="ffg">
+
+    </iframe>
+    <p>this is para</p>
+    <div>
+        <p>this is para</p>
+        <div class="good"></div>this is a div with title
+        <p>this is para</p>
+        <!-- div+p sibling elemnt of ele -->
+        <!-- div>p child -->
+        <!-- div p all p inside div (descendants) -->
+        <!-- div~p all p siblings -->
+        <!-- all are applied which are after div -->
+        <p>this is para</p>
+        <span>this is span</span>
+        <span>this children div
+        <p>this is para Inside the chile div</p>
+        </span>
+         <div> this is the <p>this is pars inside second paragraph</p>
+        </div>
+    </div>
+    <div>
+        <section>
+            <p>hi hi hi</p>
+        </section>
+    </div>
+    
+</body>
+</html>

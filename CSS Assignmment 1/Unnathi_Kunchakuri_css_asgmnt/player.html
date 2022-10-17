@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:inline-block;width:40%;">
+          <select>
+            <option onclick=player() value="1">Song1</option>
+            <option onclick=player() value="2">Song2</option>
+            <option onclick=player() value="3">Song3</option>
+  
+          </select>
+          <button type="radio" onclick=player(event) value="1">1</button>
+          <button type="radio" onclick=player(event) value="2">2</button>
+          <button type="radio" onclick=player(event) value="3">3</button>
+    </div>
+    <div style="display:inline-block;width:40%;">
+         <video controls>
+           <source id="source" src="" type="video/mp4">
+         </video>
+    </div>
+    <script>
+      // function player(e){
+      //   var ele=e.target;
+      //   var s=ele.value;
+      //   var value = ele.value;
+      //   var text = ele.selectedIndex;
+      //   console.log(text);
+      //   if(text=="1"){
+      //     source.src = "song.mp4";
+      //   }
+      // }
+      function player(e){
+        var ele=e.target;
+        var v=ele.value;
+        console.log(typeof(v));
+        if(v=="1"){
+          document.getElementById("source").setAttribute('src', 'song.mp4');
+        }
+      }
+    </script>
+</body>
+</html>
