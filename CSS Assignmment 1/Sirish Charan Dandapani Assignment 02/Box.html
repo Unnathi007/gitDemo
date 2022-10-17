@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 300px;
+        width: 300px;
+        background-color:aqua;
+        
+    }
+    img{
+        position: relative;
+        top:-10px;
+        border: solid;
+    }
+    #img1{
+        z-index: 1;
+    }
+    #img2{
+        z-index: 2;
+        left: -30px;
+    }
+    #img3{
+        z-index: 3;
+    }
+    .class{
+        left: -40px;
+    }
+    
+</style>
+<body>
+    <div>
+        <img id=img1 src="toi.png">
+        <img id=img2 src="toi.png" class="class">
+        <img id=img3 class="class" src="toi.png">
+    </div>
+</body>
+</html>
