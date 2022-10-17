@@ -1,0 +1,48 @@
+body{
+    background-color: cyan;
+}
+ol{
+    color: cyan;
+}
+form{
+    color: white;
+    
+}
+label{
+        color:yellow
+    }
+    p{
+        text-align: center;
+        color: blue;
+    }
+    #one{
+        text-align:left;
+        color: black;
+        font-size:55px;
+    }
+    #two{
+        text-align:right;
+        color: cornflowerblue;
+        font-size:60px;
+    }
+    #three{
+        text-align:left;
+        color: green;
+        font-size:40px;
+    }
+    .lol{
+        text align:left;
+        color:cornflowerblue;
+    }
+    [title]{
+        background-color: cornflowerblue;
+        font-size:60px;
+    }
+    [type=email]{
+        color:red;
+        font-size:30px;
+    }
+     input[type=password]{
+        color:cyan;
+    }
+    

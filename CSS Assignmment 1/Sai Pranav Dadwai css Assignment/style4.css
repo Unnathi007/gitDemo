@@ -1,0 +1,40 @@
+table,th,td {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  p:nth-child(2n+1){
+    background-color: green;
+}
+/* img {
+    width: 150px;
+    height: 110px;
+    max-width: 100%;
+  } */
+  
+ 
+  h1 {
+    display: inline;
+   
+    font-size: 64px;
+    position: relative;
+    left:30px;
+
+    top: -55px;
+   
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+
+  }
+  
+  li a {
+    display: block;
+    width: 80px;
+    height:60px;
+    background-color: #c193b8;
+  }
+ 

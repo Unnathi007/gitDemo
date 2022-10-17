@@ -1,0 +1,45 @@
+
+
+/*div p{
+    color:cyan
+}
+div >p{
+        color:red;
+    }
+div~p{
+    color:pink
+    } 
+	a:link{
+	color: red}
+	a:visited{
+	color:pink}
+	a:hover{
+	color: purple}
+	a:active{
+	color:yellow} */
+	
+	#imgbox1 {
+  visibility: visible;
+}
+#imgbox2{
+  visibility: hidden;
+}
+p::first-line{
+	color:red;
+	font-size:30px;
+}
+p::first-letter{
+	color:cyan;
+	font-size:40px;
+}
+h1::before{
+	color:pink;
+	font-size:45px;
+}
+h1::after{
+	color:green;
+	font-size:45px;
+	content:url(tengyart-kSvpTrfhaiU-unsplash.jpg);
+	width="460"; height="345";
+}
+
