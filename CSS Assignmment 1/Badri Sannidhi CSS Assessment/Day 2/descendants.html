@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title> Child Selctor </title>
+        <style>
+            div  p {
+                background-color: brown;
+            }
+            div>p{
+                background-color:darkblue;
+                color: white;
+            }
+            div +p{
+                background-color:darkmagenta;
+                font-size:xx-large;
+            }
+            div ~p{
+                background-color:cyan;
+            }
+            /*div +p{
+                background-color:darkmagenta;
+                font-size:xx-large;
+            }*/
+        </style>
+    </head>
+    <body>
+        <div class="good"> this is a div with title
+            <p> this is para </p>
+            <p> this is p1 </p>
+            <p> this is p2 </p>
+            <span> this is span</span>
+            <span> this childern div
+                <p> span this is para inside the child div</p>
+            </span>
+        </div>
+       
+            <p> this is sibling para </p>
+            <p> this is sibling para </p>
+        
+    </body>
+</html>
