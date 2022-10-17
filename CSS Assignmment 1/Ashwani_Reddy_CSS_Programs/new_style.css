@@ -1,0 +1,34 @@
+h3{
+    color: rgb(219, 30, 233);
+    background-color:aliceblue;
+}
+
+p{
+    text-align: right;
+    color: brown;
+    background-color: aquamarine;
+}
+
+#p1{
+    text-align: left;
+    color: rgb(237, 13, 13);
+    background-color: rgb(31, 57, 49);
+}
+#p2{
+    text-align: center;
+    color: rgb(105, 74, 38);
+    background-color: rgb(182, 214, 205);
+}
+#p3{
+    text-align: right;
+    color: rgb(78, 48, 128);
+    background-color: rgb(161, 145, 165);
+}
+#p4{
+    color: rgb(78, 48, 128);
+    background-color: rgb(161, 145, 165);
+}
+.para{
+    color: rgb(211, 19, 221);
+    background-color: rgb(106, 217, 241);
+}
