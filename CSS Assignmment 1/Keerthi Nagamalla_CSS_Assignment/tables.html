@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th, td{
+        padding:40px 40px;
+        }
+        p{
+        background-color: burlywood;
+        }
+        #p1{
+        text-align:right;
+        color:orange;
+        background-color:green;
+        }
+        #p2
+        {
+            text-align:center;
+            color:blue;
+            background-color:white;
+        }
+        #p3{
+            text-align:left;
+            color:green;
+            background-color:orange;
+        }
+        [title]{
+        /* attribute as a selector*/
+        background-color: yellow;
+        }
+        [title^="you"]{ 
+        /*[title^="you"] will make all the div tags with attribute title and prefix you to red color*/
+        background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--<iframe src="login.html" name="hello" width="1520" height="500" style="border:none"></iframe>
+    <iframe src="register.html" width="1520" height="500" style="border:none"></iframe>
+    <p><a href="play.html" target="hello">playlist</a></p>-->
+   
+    <table border=2  style="border-color:brown;" >
+        <tr>
+        <th>Sno</th>
+        <th>Book</th>
+        <th>price</th>
+        <th>Image</th>
+        <th>selectOption</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Hello</td>
+        <td>150</td>
+        <td><a href="bookinfo.html"><img src="img1.png" width="50px"></a></td>
+        <td>select language:<select multiple="true">
+            <option>Hindi</option>
+            <option>Telugu</option>
+            <option>English</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Hola</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>namasthe</td>
+        <td>350</td>
+    </tr>
+    </table>
+    <table border=2  style="border-color:brown;" >
+        <tr>
+        <th >Sno</th>
+        <th colspan="2">Book Details</th>
+        <th>Image</th>
+    </tr>
+    <tr >
+        <td rowspan="2">1</td>
+        <td>Hello</td>
+        <td>150</td>
+        <td><a href="bookinfo.html"><img src="img1.png" width="50px"></a></td>
+    </tr>
+    <tr>
+        
+        <td>Hola</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>namasthe</td>
+        <td>350</td>
+    </tr>
+    </table>
+    <ol type="a">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ol>
+     
+    <p id="p1">Hello This is keerthi</p>
+    <p id="p2">Hello This is kite</p>
+    <p id="p3">Hello This is Bat</p>
+    <p style="background-color: yellow;">Hello This is height</p>
+    <p>Hello This is nakshathra</p>
+    <p>Hello This is bear</p>
+    <p>Hello This is pig</p>
+    <p>Hello This is lion</p>
+    <div title="title1">
+        i am div with title
+    </div>
+    <div title="title2">
+        i am div with title
+    </div>
+
+    <div title="you2">
+        i am div with title
+    </div>
+
+</body>
+</html>
