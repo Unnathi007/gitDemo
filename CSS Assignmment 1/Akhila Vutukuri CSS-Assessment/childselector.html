@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > p{
+            color: aqua;
+            font-size: 20px;
+        }
+
+        div p{
+            color: rgb(111, 0, 255); 
+        }
+
+        div ~ p{
+            background-color:darkolivegreen;
+            font-size: 20px;
+        }
+
+        div + p{
+            background-color:rgb(128, 57, 90);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="good">this is a div with title
+    <h2>child-heading for div1 - "div p" is preferred over "div > p". div p - is applied to all children and grand children. div > p - applied only to the children</h2>
+    <p>1st/immediate child para for div1</p>
+    <p>2nd child para for div1</p>
+    <p>3rd child para for div1</p>
+    <span>1st span child for div1</span>
+    <span>2nd span child for div1
+    <p>Para - grandchild of div1 and child of 2nd span. only "div p" styling is applied to this para</p>
+    </span>
+</div>
+<div>division 2 begins<p>this is immediate child of div2</p>
+</div>
+<p>This is divisions' sibling. "div ~ p"- all siblings get styled. "div + p" - only immediate sibling gets styled. preferred over "div ~ p"</p>
+<p>Sibling 2</p>
+<p>Sibling 3</p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Css-styles.css" rel="stylesheet">
+    <style>
+        #i2{
+            background-color:rgb(74, 48, 134); 
+            font-style: oblique;
+            font-size: 20px;
+        }
+        p{
+            text-align:none;
+            color: skyblue;
+            font-size: 20px;
+            
+        }
+        #p1{
+            text-align: left;
+            color:gold;
+        }
+        #p2{
+            text-align: right;
+            color:rgb(130, 112, 19);
+        }
+        #p3{
+            text-align: left;
+            color:rgb(153, 23, 26);
+        }
+        .para{
+            text-align:center;
+            color:green;
+        }
+        [type="password"]{
+            background-color: lavender;
+            font-size: 20px;
+        }
+        [type="email"]{
+            background-color: rgb(34, 31, 95);
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>Styling for inputs</h3>
+    <form>
+        <input type="text" style="background-color:aqua; font-style: italic; font-size: 20px;" placeholder="inline styling">
+        <input id="i2" type="text" placeholder="embedded styling">
+        <input id="i3" type="text" placeholder="external styling">
+    </form>
+    <br>
+    <h3>Styling using id, class and element</h3>
+    <p id="p1" style="text-align: center;
+    color: rgb(55, 0, 255);">Has inline CSS, embed CSS using id and CSS using element as selector - inline CSS gets the priority if same attributes are used.</p>
+    <p id="p2">Embed CSS using element and id. Text alignment is none for element and left for id.<br> id is preferred over element selector</p>
+    <p id="p3">Embed CSS. Text aligned to left and color changed according to the styling based on id</p>
+    <p>Styling based on element</p>
+    <p class="para">Styled using class and element. Class gets the higher priority</p>
+    <p class="para">Styled using class and element. Changed according to the class selector based styling</p>
+    <br>
+    <h3>Styling using type attribute</h3>
+    <form>
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+        <br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+    </form>
+    
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table & Spans</title>
+        <link rel="stylesheet" href="table-style.css">
+    </head>
+    <body>
+
+        <!--Table-->
+        <h2>Table</h2>
+        <table>
+            <th>Products Table</th>
+            <tr>
+                <td><b>Product Name</b></td>
+                <td><b>Product</b></td>
+                <td><b>Price</b></td>
+            </tr>
+            <tr>
+                <td>Book</td>
+                <td><a href="book.html"><img src="./images/book.jpg"></a></td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Hoodie</td>
+                <td><a href="hoodie.html"><img src="./images/hoodie.jpg"></a></td>
+                <td>$15</td>
+            </tr>
+        </table>
+        <br>
+        <!--Table Spans-->
+        <h2><center>Table Spans</center></h2>
+        <div class="spans">
+        <!--column span-->
+        <div>
+        <h3>Column Span</h3>
+        <table>
+            <th>Products Table</th>
+            <tr>
+                <td colspan="2"><b>Product Name</b></td>
+                <td><b>Price</b></td>
+            </tr>
+            <tr>
+                <td>Book</td>
+                <td><a href="book.html"><img src="./images/book.jpg"></a></td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Hoodie</td>
+                <td><a href="hoodie.html"><img src="./images/hoodie.jpg"></a></td>
+                <td>$15</td>
+            </tr>
+        </table>
+        </div>
+
+        <!--row span-->
+        <div>
+        <h3>Row Span</h3>
+        <table>
+            <th>Products Table</th>
+            <tr>
+                <td><b>Product Name</b></td>
+                <td><b>Product</b></td>
+                <td><b>Price</b></td>
+                <td rowspan="3"><b>Product details</b></td>
+            </tr>
+            <tr>
+                <td>Book</td>
+                <td><a href="book.html"><img src="./images/book.jpg"></a></td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Hoodie</td>
+                <td><a href="hoodie.html"><img src="./images/hoodie.jpg"></a></td>
+                <td>$15</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="day-3.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Psuedo Classes-->
+    <h2>Implementation of pseudo classes</h2>
+    <h4>It defines the state of elements. For example, when a link is clicked it can be used for giving a different style to the link after it is clicked i.e, styling based on the state of the element. Some of the states for link are, active, hover, visited, unvisited.</h4>
+    <div id="pc">
+    <a href="login.html">Click me</a>
+    <a href="#">Hover me</a>
+    </div>
+    <hr>
+    <br>
+
+    <!---->
+    <h2>Implementation of inline and block elements</h2>
+    <h4>Block elements start in a new line. Inline elements are arranged continuosly</h4>
+    <div id="ib">
+        <h5>Examples for inline elements - input, label, a</h5>
+        <label>Inline input: </label>
+        <input type="text" placeholder="this is an inline element">
+    </div>
+    <hr><br>
+
+    <!---->
+    <h2>Implementation of display and visibility of elements</h2>
+    <h4>Display has two states - block and none. Block - displays the element, none - element is not displayed and also doesn't take any space <br> Visibility has two states - hidden and visible. Hidden - element is not visible but takes space, Visible - element is visible on the screen.</h4>
+    <div class="imgs" id="div1">
+        <img src="./images/jerry.jpg" id="img1">
+        <img src="./images/tom.png" id="img2">
+    </div>
+    <hr><br>
+
+    <!---->
+    <h2>Display and visibility using buttons</h2>
+    <div id="dv">
+    <div class="imgbox" id="imgbox1">Box 1<br>
+        <img src="./images/jerry.jpg">
+        <button onclick="removeElement()">Remove</button>
+      </div>
+      
+      <div class="imgbox" id="imgbox2">Box 2<br>
+        <img src="./images/tom.png">
+        <button onclick="changeVisibility()">Hide</button>
+      </div>
+
+      <div class="imgbox">Box 3<br>
+        <img src="./images/t&j.png">
+        <button onclick="resetElement()">Reset All</button>
+      </div>
+    </div>
+
+    <!---->
+
+      <hr><br>
+      <h2>Implementing the display and hidden to inspect</h2>
+      <p id="p1">This para is displayed - display is block</p>
+      <p id="p2">Display none - not visible, no space occupied</p>
+      <p id="p3">This para is visible - visibility is visible</p>
+      <p id="p4"> Visibility hidden - not visible,  space occupied</p>
+
+      <hr><br>
+    
+      <!---->
+      <h2>Implementing pseudo elements</h2>
+      <h4>Pseudo elements are part of elements. These are used to style a particular portion of an element. Example first-line,before, after, first-letter </h4>
+      <p id="fli">This is the first line of the paragraph. It can be styled using first-line. The other lines of paragraph are unchanged.</p>
+      <p id="fle">Using first-letter psuedo element. Only the first letter is styled.</p>
+      <h3 id="bh"> when before psuedo element is used, content is added before this element and styled</h3>
+      <h3 id="ah"> when after psuedo element is used, content is added after this element and styled</h3>
+
+      <hr><br>
+      <!---->
+      <div>
+        <h2>Implementing box model</h2>
+        <p id="bm">This paragraph is styled using box model. <br> It gets border, margin, has padded content</p>
+      </div>
+      <hr><br>
+      <!---->
+      <div>
+        <h2>Implementing border box</h2>
+        <p id="bb">This paragraph is styled using border box. <br> The box contents and specifications are confined to the given width irrespective of padding. Width is inclusive - whole box width.</p>
+      </div>
+      <hr><br>
+      <!---->
+      <div>
+        <h2>Implementing content box</h2>
+        <p id="cb">This paragraph is styled using content box. <br> All the extra paddings are exclusive of the specified width.</p>
+      </div>
+      <hr><br>
+      <!--Positions of elements-->
+      <h2>Implementing positions - relative, static-default</h2>
+      <h4>Relative - </h4>
+      <p id="rp">This paragraph is styled using specific position. <br> This para uses relative position</p>
+      
+      <script>
+      function removeElement() {
+        document.getElementById("imgbox1").style.display = "none";
+      }
+      
+      function changeVisibility() {
+        document.getElementById("imgbox2").style.visibility = "hidden";
+      }
+      
+      function resetElement() {
+        document.getElementById("imgbox1").style.display = "block";
+        document.getElementById("imgbox2").style.visibility = "visible";
+      }
+      </script>
+
+
+</body>
+</html>

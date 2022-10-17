@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3a24510dba.js" crossorigin="anonymous"></script>
+    <title>Table child styling</title>
+    <style>
+        table,td,th{
+            border:2px solid black;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(odd){
+            background-color: black;
+            color: red;
+            
+        }
+        tr:nth-child(even){
+            background-color: red;
+        }
+        p{
+            font-size: 20px;
+        }
+        p:nth-child(2n+1){
+           background-color: orange;
+       }
+       p:nth-child(2n+2){
+           background-color: purple;
+       }
+
+       i{
+        font-size: 50px;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>Column-1</td>
+                <td>Column-2</td>
+            </tr>
+            <tr>
+                <td>row-1</td>
+                <td>Red</td>
+            </tr>
+            <tr>
+                <td>row-2</td>
+                <td>Black</td>
+            </tr>
+            <tr>
+                <td>row-3</td>
+                <td>Red</td>
+            </tr>
+            <tr>
+                <td>row-4</td>
+                <td>Black</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <p>Child 1 of 1st division</p>
+        <p>Child 2 of 1st division</p>
+        <p>Child 3 of 1st division</p>
+    </div>
+    <div>
+        <p>Child 1 of 2nd division</p>
+        <p>Child 2 of 2nd division</p>
+        <p>Child 3 of 2nd division</p>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-palette"></i>
+        <i class="fa-solid fa-paintbrush"></i>
+
+    </div>
+</body>
+</html>
