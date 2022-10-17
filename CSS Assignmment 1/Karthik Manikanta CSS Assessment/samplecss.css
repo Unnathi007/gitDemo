@@ -1,0 +1,47 @@
+body{
+    background-color: lightgray;
+}
+#para1{
+    background-color: rgb(224, 65, 65);
+    text-align: right;
+    color: rgb(238, 236, 236);
+}
+#para2{
+    background-color: rgb(248, 198, 97);
+    text-align: center;
+    color: rgb(70, 66, 59);
+}
+
+#para3{
+    background-color: blueviolet;
+    text-align: justify;
+    color:darkblue;
+    font-size : 25px;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(12, 19, 5);
+    background-color: rgb(238, 224, 189);
+    text-align: justify;
+}
+.my
+{
+    background-color: lawngreen;
+    font-style: oblique;
+}
+[title="title1"]{
+color: lightsalmon;
+}
+[type="text"]
+{
+    width: 50%;
+    height: 20px;
+    background-color: lightcoral;
+}
+[type="password"]
+{
+    width: 50%;
+    height: 40px;
+    background-color: rgb(172, 127, 127);
+}

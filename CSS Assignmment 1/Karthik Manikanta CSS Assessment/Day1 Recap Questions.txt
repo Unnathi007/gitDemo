@@ -1,0 +1,38 @@
+Day1RecapQuestions
+=================
+1. What are the  new features inntroduced  inn html5
+do not give all the tags just give heading
+2. which editor did we use to work   with  html5
+3. give two short cuts in visual studio to get the basic html structure
+4. What is a browser and why
+5. Where did we execute our html5 pages
+6. what is developers tool which developers tool did we use
+7. What is the root tag of html5
+8. What are two child tags of root tag in html
+9. Is header section displayed in the browser window yes/no
+10. what do we usually write in head section of html5 . give the list
+11. What is header and why where do we usually add header in html file
+12. What is nav and why
+13. how did we add menu items in side the nav bar give syntax
+14. what is aside and how is it different from section and article
+15. Difference between section and article and are they interchangeble
+16. What is Footer and where do we add it in html5 file
+17. What is required and in which html elements did we add give the list
+18. how to create a textbox which takes only numbers
+19, how to create a text box for age which take age between 18-80 only
+20. which attribute allows to write a regular expression for a textbox
+21. What is a placeholder and why
+22. What are API
+23. What is WebStorage in html5
+24. Difference between localstorage and session storage
+25. Can i use API in html5 without javascript.
+26. localStorage.setItem("username","samatha");
+what    does the above syntax do
+which is the key which is the value
+27. Can the key and value be any other datatype otherthan string
+28. two different ways to get the data from localstorage and sessionstorage
+29. how to remove the data from localstorage
+30. When is the data removed from session storage
+31. What is autio tag
+32. What is video tag
+

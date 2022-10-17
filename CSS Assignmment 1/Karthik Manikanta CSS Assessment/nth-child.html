@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p:nth-child(4)
+    {
+       background-color: green;
+    }
+    div>p:nth-child(odd)
+    {
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <p>initial para</p>
+    <div>
+        <p>para1
+            <p>grand child</p>
+        </p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+     </div>
+     <p>
+        first para out of div
+     </p>
+     <p>
+        second para out of div
+     </p>
+     <p>
+        third para out of div
+     </p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+div>p{
+    background-color: lightcoral;
+}
+
+div p{
+    background-color: lightseagreen;
+}
+div~p{
+    background-color: lime;
+
+}
+div+p{
+    background-color: magenta;
+}

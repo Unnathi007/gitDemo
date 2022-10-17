@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="pseudo.css" rel="stylesheet">
+    <style>
+        
+        div{
+            margin: 5px 5px 5px 5px;
+            border: 10px solid;
+            border-color:rgb(246, 158, 6);
+            background-color: aqua;
+            padding-left: 100px;
+            padding-top: 100px;
+            position: relative;
+            z-index: -30;
+        }
+        /*body{
+            margin: 0px solid;
+            border: 50px solid;
+            border-color: brown;
+            position: static;
+        }
+        p::first-line{
+            font-size: x-large;
+            color: rgb(184, 17, 25);
+        }
+        p::first-letter{
+            color: rgb(5, 247, 78);
+            font-style: italic;
+            font-size:xx-large
+        }
+        #abc
+        {
+            position: relative;
+            bottom: 10px;
+            left: 500;
+        }
+        h1::after{
+            content: url(img.png);
+        }
+        h1::before{
+            content: url(data:image/png;base64,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);
+        }*/
+        #i2
+        {
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            z-index: -3;
+        }
+        #i3
+        {
+            width:400px;
+            height: 500px;
+            position: absolute;
+            z-index: -6;
+        }
+        #abc{
+            width:auto;
+            position: relative;
+        }
+        img{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <h1 style="font-style:italic;"> CyberArk</h1>
+    <img id="abc" src="img.png">
+    <img id="i2" src="https://static.remove.bg/sample-gallery/cars/car7-thumbnail.jpg">
+    <img id="i3" src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg">
+    <!--<div><p style="color: blue;">
+        I am giving out SQL projects for data analysis to the community for.This project has all but real-time project which will help you to keep it in resume and ace your SQL interviews.i am giving this opportunity to every data enthusiast to must practise on this project.more than 10 hours learning time this series of projects has everything to master sql.the project specifications are.... 8 real time data sets(ex:employees, departments e.t.c)from basics like SELECT*, operators, JOINSto advanced concepts like data wrangling, PIVOT, data analysis.complete interview type questions with source code.installation guide
+    </p></div>-->
+</body>
+</html>

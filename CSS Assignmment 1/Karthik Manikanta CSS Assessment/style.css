@@ -1,0 +1,27 @@
+header
+{
+    background-color: rgb(162, 175, 182);
+}
+img
+{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+nav
+{
+    background-color: cornsilk;
+}
+li{
+    display: inline-block;;
+}
+section{
+    background-color: cyan;
+    display:block;
+    height:30%;
+    width:100%;
+
+}
+footer{
+    background-color: darkgoldenrod;
+}
