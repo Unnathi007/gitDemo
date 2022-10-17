@@ -1,0 +1,31 @@
+/* Css for paragraphs */
+input[type=text]:focus{
+    background-color: blue;
+}
+select option[value="1"]{
+    background-color: yellow;
+}
+select option[value="2"]{
+    background-color: blue;
+}
+select option[value="3"]{
+    background-color: green;
+}
+.one > p:nth-child(4){
+   background-color: green;
+}
+.two > p:nth-child(odd){
+   background-color: green;
+}
+.two > p:nth-child(even){
+   background-color: blue;
+}
+.three > p:nth-child(2n+1){
+background-color: green;
+}
+tr:nth-child(odd){
+    background-color: peachpuff;
+}
+tr:nth-child(even){
+    background-color:yellow;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paracss</title>
+    <style>
+        input[type=text]:focus{
+            background-color: blue;
+        }
+        select option[value="1"]{
+            background-color: yellow;
+        }
+        select option[value="2"]{
+            background-color: blue;
+        }
+        select option[value="3"]{
+            background-color: green;
+        }
+       .one > p:nth-child(4){
+           background-color: green;
+       }
+       .two > p:nth-child(odd){
+           background-color: green;
+       }
+        .two > p:nth-child(even){
+           background-color: blue;
+        }
+       .three > p:nth-child(2n+1){
+        background-color: green;
+        }
+        tr:nth-child(odd){
+            background-color: peachpuff;
+        }
+        tr:nth-child(even){
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <hr>
+    <select name="" id="">
+        <option value="1">india</option>
+        <option value="2">china</option>
+        <option value="3">pakistan</option>
+    </select>
+    <hr>
+    <div class="one">
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+     </div>
+     <hr>
+     <div class="two">
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+     </div>
+     <hr>
+     <div class="three">
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+        <p>para7</p>
+        <p>para8</p>
+        <p>para9</p>
+     </div>
+     <hr>
+     <table border="2" style="border-color: brown;">
+        <tr>
+            <td> Product </td>
+            <td> Description </td>
+            <td> Price </td>
+            <td> Images </td>
+        </tr>
+        <tr>
+            <td> Facebook </td>\
+            <td> lkdsjfkl sdjkl; dajfkl </td>
+            <td> 100 </td>
+            <td><a href="facebook.html"><img src="images/facebook.png" height="50px"></a></td>
+        </tr>
+        <tr>
+            <td> Blog </td>
+            <td> dfsadfsac </td>
+            <td> 400 </td>
+            <td><a href="Blog.html"><img src="images/blog.png" height="60px"></a></td>
+        </tr>
+    </table>
+</body>
+</html>

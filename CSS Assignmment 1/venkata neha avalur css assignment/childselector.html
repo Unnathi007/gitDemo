@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child selector</title>
+    <style>
+        div > p{
+          background-color: brown;
+        }
+        div p{
+            background-color: violet;
+        }
+        /* div ~p{ 
+            background-color: yellow;
+        }*/
+        div+p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="good">
+        this is a div with title 
+        <p> this is a para </p>
+        <span> this is span </span>
+        <span> this children div 
+        <p>this is para inside the child div </p>
+        </span>
+    </div>
+    <p> this is a para outside div. sibling of d </p>
+    <div> this is the div2 </div>
+    <p> this is para inside second paragraph</p>
+    <p> this is a para outside div. sibling of d </p>
+    <p> this is a para outside div. sibling of d </p>
+    <p> this is a para outside div. sibling of d </p>
+</body>
+</html>

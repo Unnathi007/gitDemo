@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        a:link{
+            color:blueviolet;
+        }
+        a:hover{
+            color:pink;
+        }
+        a:visited{
+            color:red;
+        }
+        a:active {
+            color:yellow;
+        }
+        p::first-line{
+            color:blue;
+        }
+        p::first-letter{
+            color: red;
+        }
+        h1::before{
+            content: url(images/linkedin.png)
+        }
+        h1::after{
+            content: url(images/blog.png)
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Click the link</a>
+    <p>1</p><p>3</p><p>5</p><p>6</p>
+    <span>1 </span><span>2 </span><span>3 </span><span>4</span>
+    <div class="imgbox" id="imgbox1"> Box1 <br>
+        <img src="images/icon1.svg">
+        <button onclick="changeVisibility()">Hide</button>
+    </div>
+    <div class="imgbox" id="imgbox2"> Box2 <br>
+        <img src="images/icon2.svg">
+        <button onclick="removeElement()">Remove</button>
+    </div>
+    <div class="imgbox" id="imgbox3"> Box 3 <br>
+        <img src="images/icon3.svg">
+        <button onclick="resetElement()">Reset All</button>
+    </div>
+    <script>
+        function removeElement() {
+          document.getElementById("imgbox2").style.display = "none";
+        }
+        
+        function changeVisibility() {
+          document.getElementById("imgbox1").style.visibility = "hidden";
+        }
+        
+        function resetElement() {
+          document.getElementById("imgbox2").style.display = "block";
+          document.getElementById("imgbox1").style.visibility = "visible";
+        }
+        </script>
+        <div>
+        <p>
+        Facebook is an online social media and social networking service owned by American company Meta Platforms. 
+        Founded in 2004 by Mark Zuckerberg with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes, its name comes from the face book directories often given to American university students. 
+        Membership was initially limited to Harvard students, gradually expanding to other North American universities and, since 2006, anyone over 13 years old. 
+        </p> 
+        </div>
+        <h1> Welcome</h1>    
+        <h1> Home </h1>   
+</body>
+</html>
