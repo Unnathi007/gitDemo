@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .myStyle {
+              background-color: coral;
+              padding: 16px;
+            }
+            
+            .newStyle {
+              background-color: lightblue;
+              text-align: center;
+              font-size: 25px;
+              padding: 16px;
+            }
+            </style>
+    </head>
+    <body>
+    <div id="one">
+        <p> Two migrant labourers from Uttar Pradesh were killed during an overnight terrorist attack in Jammu and Kashmir's Shopian district.
+            The attack comes days after a Kashmiri Pandit was killed in a targeted attack in the same district.</p>
+            <p>
+                The two labourers killed were Ram Sagar and Monish Kumar, both residents of Kannauj in Uttar Pradesh.
+            </p>
+    </div>
+    <h1>Hello World!</h1>
+    <button type="button" onclick="myFunction()">Set background color</button>
+
+    <hr>
+
+    <h2>The className Property</h2>
+    <button onclick="myFunction1()">Toggle</button>
+    <div id="myDIV1" class="myStyle">
+    <p>I am myDIV.</p>
+    </div>
+
+
+    <hr>
+
+    <h1>The Element Object</h1>
+    <h2>The className Property</h2>
+    <div id="myDIV2">
+    <p>I am myDIV.</p>
+    </div>
+    <p>Click the button to set a class for myDIV:</p>
+    <button onclick="myFunction2()">Try it</button>
+
+
+    <script>
+        function myFunction() {
+        document.getElementById("one").style.backgroundColor ="cyan"
+        }
+        function myFunction1() {
+            const element = document.getElementById("myDIV1");
+            if (element.className == "myStyle") {
+                element.className = "newStyle";
+            } else {
+                element.className = "myStyle";
+            }
+        }
+        function myFunction2() {
+            document.getElementById("myDIV2").className = "myStyle";
+        }
+    </script>
+    </body>
+</html>
