@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pop{ 
+          background: rgb(90, 127, 136);
+        }
+        </style>
+</head>
+<body>
+    
+    <form id ='text2' name ="lol" class="pop">
+        Name:&nbsp; &nbsp; &nbsp;<input type="text" placeholder="Enter Name" class="text_boxes" id ="name" style="background-color: white;"><br>
+
+        Mobile: &nbsp; <input type="tel" placeholder="Enter Mobile.no" class="text_boxes" id ="mobile" style="background-color: white;"><br>
+        Age:&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<input type="number" placeholder="Enter Age" class="text_boxes" id ="age" style="background-color: white;"><br>
+        Email: &nbsp;&nbsp; &nbsp;<input type="email" placeholder="Enter email" class="text_boxes" id ="email" style="background-color: white;"><br>
+        <input type="button" value="click" onclick=" return validate()" >
+
+    </form>
+    <script>
+        function validate(){
+
+
+            let text =document.getElementById('name').value
+            let mob =document.getElementById('mobile').value
+            let age =document.getElementById('age').value
+            let email=document.getElementById('email').value
+
+            let regex1= new RegExp("[A-Za-z][A-Za-z0-9_]{7,29}$");
+            let regex2= new RegExp("^[987][0-9]{9}$");
+            let regex3= new RegExp("^[0-9]{1,2}$");
+            let regex4= new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+            if(regex1.test(text)==false){
+                document.getElementById("name");
+                alert("Min characters should be 6 and max 10")
+            }
+            if(regex2.test(mob)==false){
+                alert("wrong no")
+            }
+            if(regex3.test(age)==false){
+                alert("wrong age")
+            }
+            if(regex4.test(email)==false){
+                document.getElementById("email").style.backgroundColor="red";
+                alert("Wrong email")
+            }
+
+            return true;
+        }
+
+    
+    
+    </script>
+
+
+
+</body>
+</html>
