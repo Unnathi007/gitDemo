@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+
+        function validate() {
+            let name = document.getElementById("Text1").value;
+            let mail = document.getElementById("Text2").value;
+            let mob = document.getElementById("Text3").value;
+            let age = document.getElementById("Text4").value;
+      
+           
+            let rmob = new RegExp("^[987][0-9]{9}$");
+            let rage = new RegExp("^[0-9]{1,2}$");
+    
+    
+    
+            if (rname.test(name)==false) 
+            {
+            alert("name should be min 6 and max 10 characters and start with alphabet");
+            document.getElementById("Text1").style.backgroundColor = 'coral';
+            
+            return false;
+            }
+            if(mail.indexOf("@gmail.com") == -1 ){
+                alert("Invalid mailid")
+                document.getElementById("Text2").style.backgroundColor = 'coral';
+                return false;
+            }
+            if (rmob.test(mob)==false)
+                {
+                 alert("invalid mobile number");
+                 document.getElementById("Text3").style.backgroundColor = 'coral';
+                 return false;
+                }
+            if (rage.test(age)==false)
+                {
+                alert("Invalid age");
+                document.getElementById("Text4").style.backgroundColor = 'coral';
+                return false;
+                }
+            
+                        
+                documet.getElementById("form1").className = "newclass";
+            return true;
+            
+        }   
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            color: #CC0000;
+        }
+
+        .newclass{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body style = "background-color: aqua;">
+    <center>
+    <form id="form1" name="reg">
+ 
+        <span class="style1">STUDENT REGISTRATION FORM </span> <br />
+          <table>
+              <tr>
+            <td>Enter Name:</td>
+            <td><input id="Text1" type="text" placeholder="Name" name="sname" /></td> <br/> 
+              </tr>
+              <tr>
+              <td>Enter Email:</td>
+            <td><input id = "Text2" type = "text" placeholder = "Email" name = "email"/></td> <br/>
+             </tr>
+
+             <tr>
+             <td>Enter Mobile:</td>
+             <td><input id="Text3" type="text" placeholder="Mobile" name="mob"/></td> <br />
+            </tr>
+              
+             <tr>
+             <td>Enter Age:</td>
+            <td><input id="Text4" type="text" placeholder="Age" name="age"/></td>
+             </tr> <br />
+        
+           
+    
+         
+            <tr><td colspan="2"><center><input id="Submit1" type="submit" value="submit" onclick="return validate();"/></center></td></tr>
+
+              </table></form></center>
+</body>
+</html>

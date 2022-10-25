@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+    <style>  
+        body{  
+          font-family: Calibri, Helvetica, sans-serif;  
+          background-color: pink;  
+        }  
+        .container {  
+            padding: 50px;  
+          background-color: lightblue;  
+        }  
+          
+        input[type=text], input[type=password], textarea {  
+          width: 100%;  
+          padding: 15px;  
+          margin: 5px 0 22px 0;  
+          display: inline-block;  
+          border: none;  
+          background: #f1f1f1;  
+        }  
+        input[type=text]:focus, input[type=password]:focus {  
+          background-color: orange;  
+          outline: none;  
+        }  
+         div {  
+                    padding: 10px 0;  
+                 }  
+        hr {  
+          border: 1px solid #f1f1f1;  
+          margin-bottom: 25px;  
+        }  
+        .registerbtn {  
+          background-color: #4CAF50;  
+          color: white;  
+          padding: 16px 20px;  
+          margin: 8px 0;  
+          border: none;  
+          cursor: pointer;  
+          width: 100%;  
+          opacity: 0.9;  
+        }  
+        .registerbtn:hover {  
+          opacity: 1;  
+        }  
+        footer{
+            position: absolute;
+            bottom: 0;
+            left: 550px;
+        }
+        </style>  
+</head>
+<body>
+    <header>
+        <center>
+        <table>
+        <tr>
+           <td> <img src="images/imgf.PNG" alt =""></td>
+           <td><h1>WELCOME TO CYBERARK</h1></td>
+        </tr>
+        </table>
+        </center>
+    </header>
+
+    <form name="myform" method="post" action="" onsubmit="return validateform()">  
+        <div class="container">  
+        <center>  <h1>LOGIN</h1> </center>  
+        <hr>  
+        
+       
+       <center>
+       <table>
+        <tr>
+            <td><label for="usr"><b>Username:</b></label> 
+            <td><br/><input type="text" id="uname" name="name" placeholder = "Enter Username"><br> </td>
+         </tr>
+        
+        <tr>
+           <td><label for="psw"><b>Password:</b></label> 
+           <td><br/><input type="password" placeholder="Enter Password" name="password" required> </td>
+        </tr>
+        
+       
+        
+          <br/>
+          <tr>
+              <td></td>
+              <td><button type="submit" class="loginbtn">LOGIN</button> </td>
+          </tr>
+        </table>
+           
+    </center>   
+    </form>
+    <script>
+        function validateform(){  
+        let name=document.myform.name.value;  
+        let password=document.myform.password.value;  
+  
+if ( name == "Administrator" && password == "password" ){  
+  document.write("Login Success.");  
+ 
+}else {
+  document.write("Login Failed.");  
+  
+  }  
+        }
+        
+
+
+ 
+     
+    </script>
+    
+    <footer>
+       <center><h6>COPYRIGHTS @ CYBERARK 2022</h6></center>
+    </footer>
+</body>
+</html>
