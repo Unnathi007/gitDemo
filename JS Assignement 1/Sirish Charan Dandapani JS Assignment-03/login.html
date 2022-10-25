@@ -1,0 +1,119 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+    <link rel = "stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<title> Login Page </title>  
+	<style> 
+		ul li {
+			display: inline;
+			font-size: 20px;
+			padding-left: 14.6%;
+			padding-right: 14.6%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		ul li:hover{
+			background-color: #9904ba;
+		}  
+		Body {  
+		  font-family: Calibri, Helvetica, sans-serif;  
+		  background-color: pink;  
+		  
+		  height: 100%;  
+		  
+		  display: grid;
+		  grid-template-rows: auto auto 1fr auto;
+		}  
+		button, .submit {   
+		   background-color: #4CAF50;   
+		   width: 100%;  
+			color: orange;   
+			padding: 15px;   
+			margin: 10px 0px;   
+			border: none;   
+			cursor: pointer;   
+		}   
+		form {   
+			border: 3px solid #f1f1f1;   
+		}   
+		input[type=text], input[type=password] {   
+			width: 100%;   
+			margin: 8px 0;  
+			padding: 12px 20px;   
+			display: inline-block;   
+			border: 2px solid green;   
+			box-sizing: border-box;   
+		}  
+		button:hover {   
+			opacity: 0.7;   
+		}   
+	    .cancelbtn, .submit {   
+			width: auto;   
+			padding: 10px 18px;  
+			margin: 10px 5px;  
+		}   
+
+		.container {   
+			padding: 25px;   
+			background-color: lightblue;  
+			margin: 20px;
+		}   
+		
+		a {
+				text-decoration: none;
+				color: black;
+		}
+		
+		.activeLink {
+			background-color: #9904ba;
+		}
+	</style>   
+	<script>
+		function store(){
+			if(typeof(Storage) !== "undefined")
+			{
+				//localStorage.setItem("user", document.getElementById("name").value);
+				localStorage.setItem("user",document.getElementById("name").value);
+				window.location.replace("welcome.html");
+			  //  console.log(document.getElementById("name").value);
+				
+			}
+			else
+			{
+				document.getElementById("span1").innerHTML = "Your Browser doesnot support local storage";
+			}
+		}
+	</script>
+</head>    
+<body>    
+    <header style="background-color: #9904ba;"> 
+			<center> <img src="Logo.png" width="200px" height="200px"> </center> 
+	</header>
+	<nav> 
+		<ul style="list-style-type: none; background-color: #681b8c; padding: 20px;">
+			<li> <a href="home.html">Home</a> </li>
+			<li> <a href="register.html">Register</a> </li>
+			<li class="activeLink"> <a href="login.html">Login</a> </li>
+		</ul>			
+	</nav>
+	<div >
+		<center> <h1> Student Login Form </h1> </center>    
+		<div class="container">   
+			<label>Email : </label>   
+			<input id = "uname" type="text" placeholder="Enter Email" name="username" required>  
+			<label>Password : </label>   
+			<input id = "pass" type="password" placeholder="Enter Password" name="password" required>  
+			<input type="checkbox" checked="checked"> Remember me<br>  
+			<button onclick="callValidation()" class="cancelbtn"> login </button> 
+			<button type="button" class="cancelbtn"> Cancel</button>   <br>
+			Forgot <a href="#"> password? </a>   
+		</div>  
+	<div>
+    <footer style="background-color: #9904ba; width: 100%; font-size: 30px; padding: 10px 0px;">
+        <center>&#169; CyberArk</center>
+    </footer>
+
+	<script src="validation.js"> </script>
+</body>     
+</html>  

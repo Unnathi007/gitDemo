@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Sentence</label><input type="text" id="sentence" required>
+    <button onclick="splitString()">Click me</button>
+    <script>
+        function splitString() {
+            let str = document.getElementById("sentence").value
+            let newStr = ""
+            afterSplit = str.split(" ")
+            console.log(afterSplit)
+            for(let i = 0; i < afterSplit.length; i++) {
+                newStr +=(afterSplit[i] + '<br>')
+            }
+            document.write(newStr)
+        }
+    </script>
+</body>
+</html>

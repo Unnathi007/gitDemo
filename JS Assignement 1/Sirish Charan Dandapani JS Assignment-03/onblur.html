@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your name <input type="text" id="first" onblur="error()" onfocus="vaild()">
+    <button onclick="display()">click me</button>
+    <p id="display"></p>
+</body>
+<script>
+    function error() {
+        let name = document.getElementById("first")
+        if(name.value == '') {
+            name.style.backgroundColor = "#FF5E5C";
+        }
+    }
+    function vaild() {
+        let name = document.getElementById("first")
+        console.log("hello")
+        name.style.backgroundColor = "#fff";
+    }
+    function display() {
+        let ptag = document.getElementById("display")
+        let name = document.getElementById("first").value
+        ptag.innerHTML ="Welcome back " + name
+    }
+</script>
+</html>
