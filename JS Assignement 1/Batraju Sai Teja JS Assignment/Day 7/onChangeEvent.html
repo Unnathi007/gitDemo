@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Text : <input type="text" onblur="myFunction2()"  onchange="myFunction1()" onfocus="myFunction3()" id="class" style="background-color: white;">
+    <script>
+        function myFunction1(){
+            console.log("wcda");
+            document.getElementById("class").style.backgroundColor = "orange";
+        }
+        function myFunction2(){
+            if(document.getElementById("class").value==""){
+            document.getElementById("class").style.backgroundColor = "green";}
+
+        }
+        function myFunction3(){
+            document.getElementById("class").style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>

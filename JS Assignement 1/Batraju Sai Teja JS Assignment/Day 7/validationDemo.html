@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Registration form</h3>
+        <form id="form1" name="form">
+            Name : &nbsp;&nbsp;<input type="text" placeholder="Enter Name"
+                class="text_boxes" id="name" style="background-color: white;"><br><br>
+            Mobile : <input type="tel" placeholder="Enter Mobile Number"
+                class="text_boxes" id="mobile" style="background-color: white;"><br><br>
+            Age : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+                placeholder="Enter Age" class="text_boxes" id="age"
+                style="background-color: white;"><br><br>
+            Email : &nbsp;&nbsp;<input type="text"
+            placeholder="Enter Email" class="text_boxes" id="email"
+            style="background-color: white;"><br><br>
+            <input type="submit" onclick="return validate()" style="margin-left:
+                90px;">
+        </form>
+        <script>
+
+        function validate(){
+            let sname = document.getElementById("name").value;
+            let mobile = document.getElementById("mobile").value;
+            let age = document.getElementById("age").value;
+            let email = document.getElementById("email").value;
+
+            let snameRegex = new RegExp("^[a-zA-Z.]{6,10}$");
+            let mobileRegex = new RegExp("^[987][0-9]{9}$");
+            let ageRegex = new RegExp("^[0-9]{1,2}$");
+            let emailRegex = new RegExp("^(.+)@(.+)$");
+
+            console.log(snameRegex.test(sname));
+            console.log(mobileRegex.test(mobile));
+            console.log(ageRegex.test(age));
+            console.log(emailRegex.test(email));
+            if(snameRegex.test(sname)==false)
+            {
+                document.getElementById("name").style.backgroundColor = "red";
+                return false;
+            }
+            else{
+                if(document.getElementById("name").style.backgroundColor=="red"){
+                    document.getElementById("name").style.backgroundColor = "white";
+                }
+            }
+            if(mobileRegex.test(mobile)==false){
+                    document.getElementById("mobile").style.backgroundColor = "red";
+                    return false;
+            }
+            else{
+            if(document.getElementById("name").style.backgroundColor=="red"){
+                    document.getElementById("name").style.backgroundColor = "white";
+                }
+            }
+            if(ageRegex.test(age)==false){
+                        document.getElementById("age").style.backgroundColor = "red";
+                        return false;
+            }
+            else{
+            if(document.getElementById("name").style.backgroundColor=="red"){
+                    document.getElementById("name").style.backgroundColor = "white";
+                }
+            }
+            if(emailRegex.test(email)){
+                document.getElementById("email").style.backgroundColor = "red";
+            }
+            else{
+            if(document.getElementById("email").style.backgroundColor=="red"){
+                    document.getElementById("email").style.backgroundColor = "white";
+                }
+            }
+            return true;
+            }
+    </script>
+    </body>
+</html>
