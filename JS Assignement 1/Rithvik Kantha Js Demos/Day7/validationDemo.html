@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valiidate</title>
+    <style>
+        .error{
+            background-color: red;
+        }
+        .good{
+            background-color: green;
+        }
+    </style>
+    <script>
+        function vallidate(){
+            let name = document.getElementById("name");
+            let phone_number = document.getElementById("phone_number");
+            let age = document.getElementById("age");
+
+            let rName = new RegExp("[a-zA-Z]{5,10}")
+            let rNumber = new RegExp("[7-9][0-9]{9}$")
+            let rAge = new RegExp("^1[8-9]$|^[2-9][0-9]$")
+
+            if(!rName.test(name.value)){
+                name.className = "error"
+            }
+             if(!rNumber.test(phone_number.value)){
+                phone_number.className = "error"
+            }
+             if(!rAge.test(age.value)){
+                age.className = "error"
+                console.log("age")
+            }
+            if(rAge.test(age.value) && rNumber.test(phone_number.value) && rName.test(name.value)){
+                // let items = document.getElementsByClassName("item")
+                // for(let i=0;i<items.length;i++){
+                //     items[i].className = "good"
+                // }
+                name.style.backgroundColor = "green"
+                phone_number.style.backgroundColor = "green"
+                age.style.backgroundColor = "green"
+                
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Vallidate Your form</h1>
+    <form>
+        <input type="text" placeholder="Name.." id="name" class="item">
+        <input type="number" placeholder="Phone Number.." id="phone_number" class="item">
+        <input type="number" placeholder="Age.." id = "age" class="item">
+    </form>
+
+    <button onclick="vallidate()">Submit</button>
+
+</body>
+</html>
