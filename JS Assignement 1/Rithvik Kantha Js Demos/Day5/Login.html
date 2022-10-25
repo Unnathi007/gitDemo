@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validate</title>
+    <script>
+
+        let validate = (userName,pass) => {
+            var i =0
+                if(userName === "Admin" && pass === "password"){
+                    document.getElementById('h1').innerHTML = "Welcome...! ";
+                    console.log("HEY...");
+
+                }
+                else{
+                    //document.getElementById('h1').innerHTML = 
+
+                }
+            }
+            console.log(i);
+    </script>
+</head>
+<body>
+
+    <form>
+        <label for="email"><b>Email</b></label>  
+        <input type="text" id = "email" placeholder="Enter Email" name="email" required > 
+        <br><br>
+        <label for="psw"><b>Password</b></label>  
+        <input type="password" id = "pass" placeholder="Enter Password" name= "psw" required>
+        
+    </form>
+
+    <button onclick="validate(document.getElementById('email').value,document.getElementById('pass').value)"> Login</button>
+    <h1 id="h1" style="position: absloute; top:10%;"> HEY </h1>
+</body>
+</html>
