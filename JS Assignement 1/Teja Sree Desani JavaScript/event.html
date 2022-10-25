@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events</title>
+    
+</head>
+<body>
+    <p id="teja">Teja Sree</p>
+
+
+<!--     
+    Using id
+    <button onclick="fun1()">Pink Color</button>
+    <button onclick="fun2()">Blue Color</button>
+    
+    <script>
+        function fun1(){
+            document.getElementById('teja').style.backgroundColor='pink'
+        }
+        function fun2(){
+            document.getElementById('teja').style.backgroundColor='blue'
+        }
+    </script> -->
+
+
+    <!-- Using target -->
+    <button id='b1' onclick="eventTriggered(event)">Pink Color</button>
+    <button id='b2' onclick="eventTriggered(event)">Blue Color</button>
+    <script>
+        function eventTriggered(event){
+            let element = event.target.id.toString()
+            if(element =='b1'){
+                document.getElementById('teja').style.backgroundColor='pink'
+            }
+            else{
+                document.getElementById('teja').style.backgroundColor='lightblue'
+            }
+        }
+    </script>
+</body>
+</html>

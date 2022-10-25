@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ADDITION</title>
+    <style>
+        body{
+            padding-left: 500px;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form onclick="addition()">
+            <label>Enter  No-1 :</label>
+            <input id="no1" type="text"><br>
+            
+            <label>Enter  No-2 :</label>
+            <input id="no2" type="text"><br>
+
+            <!-- <input  type="submit" id="result"><br> -->
+            <button> ADD</button><br>
+            
+            <label>Addition of two Numbers: </label>
+            <input id="sum" type="text">
+    </form>
+            
+    <script>
+        function addition(){
+            let a=document.getElementById('no1').value
+            let b=document.getElementById('no2').value
+
+            document.getElementById('sum').value=parseInt(a)+parseInt(b)
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+    function validate() {
+
+        document.getElementById('form1').className="newstyle";
+
+        var name = document.getElementById("Text1").value;
+        var mob = document.getElementById("Text2").value;
+        var age = document.getElementById("Text3").value;
+        var email =document.getElementById("Text4").value;
+  
+        var rname = new RegExp("^[a-zA-Z .]{6,10}$");
+        var rmob = new RegExp("^[987][0-9]{9}$");
+        var rage = new RegExp("^[0-9]{1,2}$");
+        var remail = new RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
+
+
+
+        if (rname.test(name)==false){
+            document.getElementById("Text1").style.backgroundColor="red";
+            alert("name should be min 6 and max 10 characters and start with alphabet");
+            return false;
+        }
+        
+        if (rmob.test(mob)==false){
+            document.getElementsById("Text2").style.backgroundColor="red";
+            alert("invalid mobile number");
+            return false;
+        }
+
+        if (rage.test(age)==false){
+            document.getElementById("Text3").style.backgroundColor="red";
+            alert("Invalid age");
+            return false;
+        }
+        
+        if(remail.test(email)==false){
+            document.getElementById("Text4").style.backgroundColor="red";
+            alert("Invalid Email");
+            return false;
+        }
+
+        return true;
+                
+    }
+
+    function funempty(id){
+        if(document.getElementById(id).value==''){
+            document.getElementById(id).style.backgroundColor='pink'
+        }
+    }
+    function funchange(id){
+        document.getElementById(id).style.backgroundColor='white'
+    }
+
+    function funfocus(id){
+        document.getElementById(id).style.backgroundColor='green'
+    }
+
+
+</script>
+
+
+    <title>Validations</title>
+
+    <style type="text/css">
+        .style1
+        {
+            font-size: larger;
+            color: #0810f3;
+        }
+
+        .newstyle{
+            background-color: lightblue;
+            padding: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form id="form1" name="reg">
+ 
+    <span class="style1">STUDENT REGISTRATION FORM </span> <br />
+
+        Enter Name :
+        <input id="Text1" type="text" placeholder="Name" name="sname" onfocus="funfocus(this.id)" onblur="funempty(this.id)" oninput="funchange(this.id)"/> <br />
+
+        Mobile :&nbsp;&nbsp;
+        <input id="Text2" type="text" placeholder="Mobile" name="mob" onfocus="funfocus(this.id)" onblur="funempty(this.id)" oninput="funchange(this.id)"/> <br />
+   
+        Enter Age:
+        <input id="Text3" type="text" placeholder="Age" name="age" onfocus="funfocus(this.id)" onblur="funempty(this.id)" oninput="funchange(this.id)"/> <br />
+
+        Enter Email:
+        <input id="Text4" type="text" placeholder="Email" name="email" onfocus="funfocus(this.id)" onblur="funempty(this.id)" oninput="funchange(this.id)"/> <br/>    
+
+     
+        <input id="Submit1" type="submit" value="submit" onclick="return validate();"/></form>
+</body>
+</html>
