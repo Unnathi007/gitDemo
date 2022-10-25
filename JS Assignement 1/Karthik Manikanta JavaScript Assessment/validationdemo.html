@@ -1,0 +1,87 @@
+<html>
+<head>
+    <script language="javascript" type="text/javascript">
+    function validate() {
+        document.getElementById("Text1").style.backgroundColor='white'
+        document.getElementById("Text2").style.backgroundColor='white'
+        document.getElementById("Text3").style.backgroundColor='white'
+        document.getElementById("Text4").style.backgroundColor='white'
+
+        var name = document.getElementById("Text1").value;
+        var mob = document.getElementById("Text2").value;
+        var age = document.getElementById("Text3").value;
+        var email = document.getElementById("Text4").value;
+  
+        var rname = new RegExp("^[a-zA-Z .]{6,10}$");
+        var rmob = new RegExp("^[987][0-9]{9}$");
+        var rage = new RegExp("^[0-9]{1,2}$");
+        var remail = new RegExp("^[a-z0-9](\.?[a-z0-9]){5,}@cyberark\.com$")
+
+        if(rname.test(name)==false || rmob.test(mob)==false || rage.test(age)==false || remail.test(email)==false)
+        {
+            if (rname.test(name)==false) 
+            {
+                alert("name should be min 6 and max 10 characters and start with alphabet");
+                document.getElementById("Text1").style.backgroundColor='red'
+                //return false;
+            }
+            if (rmob.test(mob)==false)
+            {
+                alert("invalid mobile number");
+                document.getElementById("Text2").style.backgroundColor='red'
+                //return false;
+            }
+            if (rage.test(age)==false)
+            {
+                alert("Invalid age");
+                document.getElementById("Text3").style.backgroundColor='red'
+                //return false;
+            }
+            if (remail.test(email)==false)
+            {
+                alert("Invalid email");
+                document.getElementById("Text4").style.backgroundColor='red'
+                //return false;
+            }
+            return false;
+        }
+        return true;    
+    }
+    </script>
+    
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            color: #CC0000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+    <form id="form1" name="reg">
+    <span class="style1">STUDENT REGISTRATION FORM </span>
+    <br/><br/>
+        Enter Name :
+        <input id="Text1" type="text" placeholder="Name" name="sname" /> <br/><br/>
+        
+        Mobile :&nbsp;&nbsp;
+        <input id="Text2" type="text" placeholder="Mobile" name="mob"/> <br/><br/>
+   
+        Enter Age:
+        <input id="Text3" type="text" placeholder="Age" name="age"/> <br/><br/>
+
+        Enter Email:
+        <input id="Text4" type="text" placeholder="Email" name="email"/> <br/><br/>
+
+        <input id="Submit1" type="submit" value="submit" onclick="return validate();"/>
+    </form>
+    </center>
+</body>
+</html>
