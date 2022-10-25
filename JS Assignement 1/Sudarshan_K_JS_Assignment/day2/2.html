@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <style>
+            * {
+                padding: 0px;
+                border: 0px;
+                margin: 0px;
+            }
+
+            header {
+                padding: 20px;
+                font-size: 100%;
+                background-color: #a5b1dc;
+                text-align: center;
+            }
+
+            nav {
+                padding: 20px;
+                font-size: 20em;
+                display: flex;
+                flex-direction: row;
+                height: 50px;
+                font-size: 100%;
+                background-color: #008000;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            article {
+                float: right;
+                width: 50%;
+                font-size: 200%;
+                text-align: center;
+            }
+
+            nav a {
+                padding: 5px;
+            }
+            footer {
+            
+                padding: 20px;
+                font-size: 50%;
+                background-color: #a5b1dc;
+                text-align: end;
+            }
+
+            input[type=text],
+            input[type=password],
+            textarea,
+            input[type=email],
+            input[type=tel] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            input[type=text]:focus,
+            input[type=password]:focus {
+                background-color: #a5b1dc;
+                outline: none;
+            }
+
+            form {
+                padding: 50px;
+                background-color: #ff8080;
+            }
+
+            div {
+                padding: 10px 0;
+            }
+
+            .registerbtn {
+                background-color: #267c9d;
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+
+            .registerbtn:hover {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CYBER</h1>
+        </header>
+        <hr>
+        <nav>
+            <a href="Login.html">Login</a>
+            <a href="Signup.html">Sign up</a>
+            <a href="demo.html">Home</a>
+        </nav>
+        <hr>
+        <center>
+            <h2 style="background-color:#c0c0c0 ;">Login</h2>
+        </center>
+        <form  method="GET">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit" class="registerbtn" onClick="store();">Login</button>
+        </form>
+        <hr>
+        <footer>
+            <h3>@Nothings here</h3>
+        </footer>
+        <script>
+            function validate(user, pass){
+                if (user==="user" && pass==="pass")
+                    alert("login succes")
+                else
+                    alert("fail")
+            }
+            function store() {
+                if (typeof(Storage) !== "undefined") {
+                    localStorage.setItem("username", document.getElementById("username").value);
+                }
+                let user=document.getElementById("username").value
+                let pass=document.getElementById("password").value
+                validate(user,pass)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+intro to ecmascript
+default named exports
+alias with imports
+diff btw named and default exports 
+strict mode
+
+events
+
+
+
+----- ecma intro ppt
+----- hoisting

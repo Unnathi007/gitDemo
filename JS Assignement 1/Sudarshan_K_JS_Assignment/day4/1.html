@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .error{
+        background-color: red;
+    }
+    .valid{
+        background-color: green;
+    }
+    </style>
+
+
+    <script>
+        
+
+        function fun(){
+            let fname   = document.getElementById("fname")
+            let ph      = document.getElementById("phno")
+            let age     = document.getElementById("age")
+
+            let rname   =new RegExp("^[a-zA-Z]{5,10}$")
+            let rph     =new RegExp("[7-9][0-9]{9}$")
+            let rage     =new RegExp("^[1][8-9]$|^[2-9][0-9]$")
+
+            if (rname.test(fname.value)==false){
+                document.getElementById('fname').className="error"
+                console.log('name')
+            }
+            else if (rph.test(ph.value)==false){
+                document.getElementById('phno').className="error"
+            }
+            else if (rage.test(age.value)==false){
+                document.getElementById('age').className="error"
+                console.log('age')
+            }
+            else{
+                console.log("allright")
+                fname.className="valid"
+                ph.className="valid"
+                age.className="valid"
+            }
+            
+
+        }
+    </script>
+
+</head>
+<body>
+    <form name="reg" class="form1">
+
+        <div class="style1">Student Reguistration form </div>
+        <br>
+        <label for="fname">First name:</label>
+        <input type="text" name="firstname" id="fname" placeholder="Enter Your name">
+        <br>
+        <label for="fname">Mobile No:</label>
+        <input type="text" name="mobile" id="phno" placeholder="Enter Phno.">
+        <br>
+        <label for="fname">Age</label>
+        <input type="num" name="age1" id="age"  placeholder="Enter Age">
+        <input type="button" value="login" name="login" id="login" onclick="fun();">
+    </form>
+    
+</body>
+</html>
