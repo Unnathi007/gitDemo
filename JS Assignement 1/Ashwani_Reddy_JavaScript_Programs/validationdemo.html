@@ -1,0 +1,87 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+    function validate() {
+        var name = document.getElementById("Text1").value;
+        var mob = document.getElementById("Text2").value;
+        var age = document.getElementById("Text3").value;
+        var email = document.getElementById("email").value;
+  
+        var rname = new RegExp("^[a-zA-Z .]{6,10}$");
+        var rmob = new RegExp("^[987][0-9]{9}$");
+        var rage = new RegExp("^[0-9]{1,2}$");
+        var remail = new RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$")
+
+        let count = 0;
+        document.getElementById("Text1").style.backgroundColor='white'
+
+        document.getElementById("Text2").style.backgroundColor='white'
+
+        document.getElementById("Text3").style.backgroundColor='white'
+        if (rname.test(name)==false) 
+        {
+            document.getElementById("Text1").style.backgroundColor= "red";
+        alert("name should be min 6 and max 10 characters and start with alphabet");
+       count += 1;
+        }
+            if (rmob.test(mob)==false)
+            {
+                document.getElementById("Text2").style.backgroundColor= "red";
+             alert("invalid mobile number");
+          count += 1;
+            }
+                if (rage.test(age)==false)
+                {
+                alert("Invalid age");
+                document.getElementById("Text3").style.backgroundColor= "red";
+                count += 1; 
+                //return false;
+                }
+                if(remail.test(email)==false)
+            {
+                document.getElementById("email").style.backgroundColor="red";
+                alert("Enter Valid Email");
+                count+=1;
+
+            }
+                if(count == 0){
+                return true;
+                }
+                else{
+                  
+                return false;
+                }
+                
+    }
+
+</script>
+    <style type="text/css">
+        .style1
+        {
+            color: #CC0000;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" name="reg">
+    <center>
+    <span class="style1">STUDENT REGISTRATION FORM </span> <br /><br>
+            Enter Name :
+        <input id="Text1" type="text" placeholder="Name" name="sname" /> <br /><br>
+        Mobile :&nbsp;&nbsp;
+        <input id="Text2" type="text" placeholder="Mobile" name="mob"/> <br /><br>
+   
+        Enter Age:
+        <input id="Text3" type="text" placeholder="Age" name="age"/> <br /><br>
+        Enter Email:
+        <input id="email" type="text" placeholder="Email" ><br><br>
+       
+
+     
+        <input id="Submit1" type="submit" value="submit" onclick="return validate();"/>
+    </center>
+    </form>
+</body>
+</html>

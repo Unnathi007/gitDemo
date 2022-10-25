@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script>
+    function op(n)
+    {
+        let a=parseInt(document.getElementById("num1").value);
+        let b=parseInt(document.getElementById("num2").value);
+        if(n==1)
+        document.getElementById("res").value=(a+b)
+        else if(n==2)
+        document.getElementById("res").value=(a-b)
+        else if(n==3)
+        document.getElementById("res").value=(a*b)
+        else if(n==4)
+        document.getElementById("res").value=(a/b)
+    } 
+    </script>
+</head>
+<body>
+    <center>
+    Enter Number1:<input id = "num1" type="number" placeholder="num1" required><br>
+    Enter Number2:<input id = "num2" type="number" placeholder="num2" required><br>
+    <button id="add" onclick="op(1)">+</button>
+    <button id="sub" onclick="op(2)">-</button>
+    <button id="mul" onclick="op(3)">*</button>
+    <button id="div" onclick="op(4)">/</button>
+    <br>
+    Result:<input id="res" type="number" disabled="disabled">
+    </center>
+</body>
+</html>
