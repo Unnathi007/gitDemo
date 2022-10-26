@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target</title>
+    
+</head>
+<body>
+    <form onsubmit="myFunction(event)">
+        Name:
+        <input type="text" placeholder="name">
+        <input type="submit" name="submit" >
+        </form>
+    <script>
+        function myFunction(e){
+          alert(e.target.nodeName)
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!--hi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validations</title>
+    <script  language="javascript" type="text/javascript" >
+        function validate(){
+            var name=document.getElementById("name").value;
+            var age=document.getElementById("age").value;
+            var mob=document.getElementById("mob").value;
+
+           var rname=new RegExp("^[a-zA-Z]{6,10}");
+           var rage=new RegExp("^[0-9]{1,2}$");
+           var rmob = new RegExp("^[987][0-9]{9}$");
+           var remail=new RegExp("^[a-zA-Z]+[@]+[a-zA-Z.]+com")
+
+        if (rname.test(name)==false) 
+        {
+        alert("name should be min 6 and max 10 characters and start with alphabet");
+        const element= document.getElementById("myDIV");
+        if(element.className=='myStyle')
+          element.className='newStyle'
+        return false;
+        }
+            if (rmob.test(mob)==false)
+            {
+             alert("invalid mobile number");
+        return false;
+            }
+                if (rage.test(age)==false)
+                {
+                alert("Invalid age");
+                return false;
+                }
+                    return true;
+        if(remail.test(email)==false){
+            alert("invalid email");
+            document.getElementById
+        }
+                
+    }   
+    function changeFill(){
+        var x=document.getElementById("name").value;
+        if(x=='')
+        document.getElementById("name").style.background="red"
+
+    }
+    function writess(){
+        document.getElementById("name").style.backgroundColor="white"
+    }
+    </script>
+     <style type="text/css">
+        .style1
+        {
+            color: #CC0000;
+        }
+        .myStyle {
+        background-color: coral;
+       padding: 16px;
+      }
+
+.newStyle {
+  background-color: lightblue;
+  text-align: center;
+  font-size: 25px;
+  padding: 16px;
+}
+    </style>
+</head>
+<body>
+    <form id="myDIV" class="myStyle" >
+        <span class="style1">STUDENT REGISTRATION FORM </span> <br />
+        Enter Name:
+        <input type="text" id="name" placeholder="Name" onblur="changeFill()" oninput="writess()"  /><br>
+        Enter Age:
+        <input type="text" id="age" placeholder="Age"  /><br>
+        Enter Mobile:
+        <input type="text" id="mob" placeholder="Mobile Number"  /><br>
+        Enter Email:
+        <input type="text" id="email" placeholder="Email" />
+        <input type="submit" value="submit" onclick="return  validate()"/>
+    </form>
+</body>
+</html>

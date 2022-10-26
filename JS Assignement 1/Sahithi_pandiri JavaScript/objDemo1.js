@@ -1,0 +1,9 @@
+person={
+    id:1,
+    name:'sahithi',
+    age:12,
+    work:function(){
+        console.log(this.id)
+    }
+}
+console.log(person.id);person.work();
