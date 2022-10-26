@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+            <label>NUM1 : </label>
+            <input type="text" id="num1">
+            <label>NUM2 : </label>
+            <input type="text" id="num2">
+            <button type="submit" onclick="passNumbers()">+</button>
+            <input type="text" id="res">
+        
+        <script>
+            function passNumbers(){
+                let num1 = parseInt(document.getElementById("num1").value)
+                let num2 = parseInt(document.getElementById("num2").value)
+                let sum = addNumbers(num1, num2);
+                document.getElementById("res").value = sum
+            }
+            
+            function addNumbers(num1, num2){
+                return num1 + num2;
+            }
+        </script>
+    </body>
+</html>
