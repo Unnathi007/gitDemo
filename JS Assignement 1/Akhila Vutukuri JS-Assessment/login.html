@@ -1,0 +1,92 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="task1-style.css">
+<script src="validate_function.js"></script>
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;   
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=email],input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+} 
+</style>  
+</head>  
+<body>  
+      <!--Header-->
+    <header>
+        <img id="header-image" src="./images/icon.png">
+        <p id="header-title">CyberArk</p>
+    </header>
+    <!--Navigation bar-->
+    <nav>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="audio-video.html">AudioVisuals</a>
+    </nav>
+<form>  
+  <div class="container">  
+  <h2><center> Login Form </center></h2> 
+ <label for="email"><b>Email</b></label>  
+ <input type="email" id="email" placeholder="Enter Email" name="email" id="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" id="pwd" placeholder="Enter Password" name="psw"  required>  
+    <button type="button" class="registerbtn" onclick="getValues();">Login</button>   
+</form>  
+
+</div>
+
+ <!--Footer-->
+<footer>
+  <p id="footer-text">Copyright © 2022 CyberArk Software Ltd.<br>
+      All rights reserved.</p>
+</footer>
+
+  <!--Script-->
+<script>
+function Store(){
+  if (typeof(Storage) !== "undefined") {
+    var a= document.getElementById("email").value;
+  // Store
+  localStorage.setItem("username", a);
+  }
+        }
+</script>
+</body>  
+</html>  

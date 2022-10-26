@@ -1,0 +1,92 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+
+    function validate() {
+        var name = document.getElementById("Text1").value;
+        var mob = document.getElementById("Text2").value;
+        var age = document.getElementById("Text3").value;
+        var email = document.getElementById("Text4").value;
+  
+        var rname = new RegExp("^[a-zA-Z .]{6,10}$");
+        var rmob = new RegExp("^[987][0-9]{9}$");
+        var rage = new RegExp("^[1-9]{1,2}$");
+        var remail = new RegExp("^[a-z0-9]+@+(gmail|cyberark)+.+(com|in)$")
+
+        console.log(name,mob,age);
+
+        if (rname.test(name)==false) 
+        {
+        let a = document.getElementById("form1");
+        if(a.className=="form-class"){
+            a.className = "form-modify";
+        }
+        document.getElementById("Text1").style.backgroundColor="red";
+        alert("name should be min 6 and max 10 characters and start with alphabet");
+        return false;
+        }
+            if (rmob.test(mob)==false)
+            {
+             alert("invalid mobile number");
+        return false;
+            }
+                if (rage.test(age)==false)
+                {
+                alert("Invalid age");
+                return false;
+                }
+                if (remail.test(email)==false)
+                {
+                alert("Invalid email");
+                return false;
+                }
+                
+                    return true;
+                
+    }
+    
+    function focusFun(){
+        var c = document.getElementById("Text1").style.backgroundColor="green";
+    }   
+
+    function blurFun(){
+        var c = document.getElementById("Text1").style.backgroundColor="violet";
+    }  
+
+
+
+</script>
+    <title></title>
+    <style type="text/css">
+        .style1
+        {
+            color: #CC0000;
+        }
+
+        .form-class{
+            background-color: aqua;
+        }
+        .form-modify{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <form class = "form-class" id="form1" name="reg">
+ 
+    <span class="style1">STUDENT REGISTRATION FORM </span> <br />
+            Enter Name :
+        <input id="Text1" type="text" placeholder="Name" name="sname" onChange = "" onfocus = "focusFun();" onblur="blurFun();"/> <br />
+        Mobile :&nbsp;&nbsp;
+        <input id="Text2" type="text" placeholder="Mobile" name="mob"/> <br />
+   
+        Enter Age:
+        <input id="Text3" type="text" placeholder="Age" name="age"/> <br />
+        Enter Email:
+        <input id="Text4" type="text" placeholder="Email" name="email"/> <br />
+
+     
+        <input id="Submit1" type="submit" value="submit" onclick=" return validate();"/></form>
+</body>
+</html>
