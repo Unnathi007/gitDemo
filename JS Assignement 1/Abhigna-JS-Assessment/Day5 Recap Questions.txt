@@ -1,0 +1,151 @@
+Day5 Recap Questions
+==================
+1. Syntax to add a external javascript to html page
+2. Difference between == and ===
+3. let variable;
+    variable = value
+What is the datatype of variable
+4. How to find the datatype of a variable
+5. let variable =20
+what is the datatype of variable
+6. let varaiable = "hello world"
+what is the datatype of variable
+7. let variable = true
+what is the datatype of the variable
+8. difference between let var and const
+9.
+Predict the output 
+function sayHello(){
+console.log('hello')
+}
+sayHello();
+
+10. Predict the output 
+let hello = function sayHello(){
+console.log('iam been called')
+}
+
+11.
+let func1 = (num) => num*num
+Give syntax to call this function
+
+12. 
+an object is a collection of ________ and ___________
+
+13. person={
+id=1,
+name="samatha"
+};
+console.log(person.id)
+console.log(person['name'])
+Predict the output
+ 
+14. Predict the output
+ 
+person={
+    id:1,
+    name:'newname',
+    age:12,
+    work: function(){
+            console.log('person does some work')
+    },
+    display:()=> console.log(`id : ${person.id} name : ${person.name} age : ${person.age}`)
+    
+}
+
+//this : represents current object
+//two different ways to access the properties of an object
+//dot notation
+//[] square bracket notation
+console.log(person.id)
+console.log(person['name'])
+console.log(person.age)
+person.work();
+person.display();
+
+
+
+15. 
+person={
+    id:1,
+    name:'demo',
+   };
+
+let anotherperson = {...person ,job : 'consultant',email:'someemail@gmail.com'}
+console.log(anotherperson)
+
+Predict the output
+
+16.
+let array1 = ["one","two"]
+let array2 = ["three","four"]
+let newarray = [...array1,"helloworld",...array2,1,2,3,4]
+console.log(newarray)
+
+17.
+let array1 = ["one","two"]
+let array3= "samatha";
+let x = array1.concat(array3)
+console.log(x)
+
+Predict the output
+
+18.
+let array1 = ["one","two"]
+let array3= "samatha";
+let y= [...array1,...array3]
+console.log(y)
+
+Predict the output
+
+19.
+
+let numarray1 = [1,2,3,4,5,6,7,8,9,10]
+let [p,q,...r] =numarray1;
+console.log(p)
+console.log(q)
+console.log(r)
+
+Predict the output
+
+20. 
+
+let array2 = ['sai','unnathi','sirish','lakshmi']
+const newarray10 = array2.splice(2,2,'samatha','lohith')
+console.log(array2)
+console.log(newarray10)
+
+Predict the outptu
+
+21.
+let array2 = ['sai','unnathi','sirish','lakshmi']
+const newarray11 = array2.slice(2)
+console.log(array2)
+console.log(newarray11)
+
+Predict the output
+
+22. 
+let array1 = [1,2,3,4,5,6,7,8,9,10]
+let array3 = [1,true,"samatha",12.34]
+let array4 = new Array(1,2,3,4,5,6,7);
+let array5 = new Array('abc','efg','xyz','lmn','pqr');
+Which of the following are the correct way of array declarations
+
+23.
+An array is a collection of ______________ Hence an array can store datatype of _______________
+
+24.
+ How to call a function called myfunction1() on a buttonclick , and this function is present in a separate javascriptfile
+Myscriptfile1.js
+
+25.
+Myscriptfile1.js
+function myfunction()   
+ {   
+document.write("welcome to Javatpoint");  
+         }
+
+Predict    the output of the function when called in button click
+
+  

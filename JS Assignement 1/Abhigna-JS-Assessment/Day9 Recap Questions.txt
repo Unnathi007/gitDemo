@@ -1,0 +1,21 @@
+Recap Questions Day9
+==================
+1.abbrevate ecma
+2. what is es6 also called as
+3. list the features introduced in es6
+4. how many export keywords can be present in a .js file
+5. how many default exports keywords can be present in a .js file
+6. difference between named export and default named export
+7. if we want to import two functions with same name but they belong to a different .js file how do we achieve it
+8. What is hoisting. 
+9. Is hoisting a old feature or a new feautre which got introduced in es6
+10. What is use strict and why use strict
+11. which version did use strict got introduced
+12. What is an event
+13. Events are classifed into
+14. how to identify which element generated a event
+15. what are event handlers 
+16. Why event handlers
+17.What happens if there are no event handlers
+18.What does event.target.tagName returns
+

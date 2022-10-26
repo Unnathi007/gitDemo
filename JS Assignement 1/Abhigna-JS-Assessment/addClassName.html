@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nclass{
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        .pclass{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>adding class name </h1>
+    <div id="myDiv" style="height: 100px;padding: 40px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus elit in interdum tincidunt. Donec ut viverra quam. Mauris sagittis tempor dictum. Integer consequat scelerisque luctus. Nam a consequat sapien, id fringilla mi. Curabitur justo ipsum, posuere eget tincidunt vel, laoreet vitae libero. Quisque malesuada non dui sed ullamcorper. Pellentesque vestibulum arcu facilisis felis porttitor, sed gravida ex elementum.</p>
+    </div>
+    <button onclick="addClass()">change div style</button>
+    <script>
+        function addClass(){
+            var ele=document.getElementById("myDiv");
+            if(ele.className=='nclass')
+            {
+                ele.className='pclass';
+            }
+            else{
+                ele.className="nclass"
+            }
+            
+        }
+    </script>
+</body>
+</html>

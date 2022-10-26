@@ -1,0 +1,167 @@
+<script>  
+var str="Javatpoint";  
+document.writeln(str.charAt(4));  
+</script>  
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.charAt());//print first character  
+</script> 
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.charAt(str.length-1));  
+</script>
+
+
+<script>  
+var web="Learn JavaScript on Javatpoint";  
+document.write(web.indexOf('a'));  
+</script>  
+
+<script>  
+var web="Learn JavaScript on Javatpoint";  
+document.write(web.indexOf('a',3));  
+</script>  
+
+
+<script>  
+var web="Learn JavaScript on Javatpoint";  
+document.write(web.indexOf("Java"));  
+</script>
+
+</script>  
+var web="Learn JavaScript on Javatpoint";  
+document.write(web.indexOf("Java",7));  
+</script> 
+
+<script>  
+var web="Learn JavaScript on Javatpoint";  
+document.write(web.indexOf("java"));  
+</script>  
+
+
+<script>  
+var str="JavaScript is a scripting language. Scripting languages are often interpreted";  
+document.writeln(str.search("scripting"));  
+</script>
+
+<script>  
+var str="JavaScript is a scripting language. Scripting languages are often interpreted";  
+document.writeln(str.search(/Scripting/));   
+</script>  
+
+<script>  
+var str="JavaScript is a scripting language. Scripting languages are often interpreted";  
+document.writeln(str.search(/Scripting/i));  
+</script> 
+
+<script>  
+var str="JavaScript is a scripting language. Scripting languages are often interpreted";  
+document.writeln(str.search(/Javatpoint/));  
+</script>  
+
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.match(/Java/g));  
+</script> 
+
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.match(/java/g));  
+</script> 
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.match(/java/gi));  
+</script>  
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.match(/[a-p]/g));  
+</script>  
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.match(/[a-p]/));//return the first match  
+</script>
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.match("Java"));  
+</script> 
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.replace("tpoint","Script"));  
+</script>
+
+<script>  
+var str=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";  
+document.writeln(str.replace(/Node.js/g,"AngularJS"));  
+</script>  
+
+<script>  
+var str=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";  
+document.writeln(str.replace(/Node.js/,"AngularJS")); //It will replace only first match.  
+</script>
+
+<script>  
+var str=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";  
+document.writeln(str.replace(/Node.JS/g,"AngularJS"));  
+</script>  
+
+<script>  
+var str=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";  
+document.writeln(str.replace(/Node.JS/gi,"AngularJS"));  
+</script> 
+
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.substring(0,4));  
+</script>
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.substring(4,5));  
+</script>
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.substring(5));  
+</script> 
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.substring());  
+</script>
+
+<script>  
+var str = "JAVATPOINT";  
+document.writeln(str.toLowerCase());  
+</script>
+
+<script>  
+var str = "javatpoint";  
+document.writeln(str.toUpperCase());  
+</script>  
+
+<script>  
+var str="Javatpoint";  
+document.writeln(str.valueOf());  
+</script>
+
+<script>  
+var s1="     javascript trim    ";  
+var s2=s1.trim();  
+document.write(s2);  
+</script>
+
+<script>  
+var str="This is JavaTpoint website";  
+document.write(str.split(" ")); //splits the given string.  
+</script> 
+
