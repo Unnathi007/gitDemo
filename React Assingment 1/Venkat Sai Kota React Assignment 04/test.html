@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><input type="checkbox" class="a" />Test1</div>
+    <div><input type="checkbox" class="a" />Test2</div>
+    <div><input type="checkbox" class="a" />Test3</div>
+    <div><input type="checkbox" class="a" />Test4</div>
+    <input type="button" value ="Delete" onClick="fun()"/>
+    <script>
+        function fun(){
+            const checkboxs=document.getElementsByClassName('a');
+            
+            Object.entries(checkboxs).forEach(element=>{
+                console.log(element)
+                if(element[1].checked===true){
+                    
+                    element[1].parentElement.style.display="none"
+                }
+            })
+        }
+    </script>
+</body>
+</html>
