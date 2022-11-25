@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "empId": 101,
+            "empName": "Rohith Siripuram",
+            "salary": 24098
+        },
+        {
+            "empId": 102,
+            "empName": "lskfj",
+            "salary": 32450
+        },
+        {
+            "empId": 102,
+            "empName": "lskfj",
+            "salary": 32450
+        },
+        {
+            "empId": 106,
+            "empName": "Aakash",
+            "salary": 24000
+        }
+    ]
+}
