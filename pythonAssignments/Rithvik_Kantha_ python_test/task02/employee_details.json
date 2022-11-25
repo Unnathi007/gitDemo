@@ -1,0 +1,29 @@
+{
+    "employee_details": [
+        {
+            "emp_id": 12,
+            "emp_name": "rig",
+            "emp_age": 19,
+            "emp_phone_number": "1990",
+            "emp_dept": "ir",
+            "emp_salary": "10993"
+        },
+        {
+            "emp_id": 13,
+            "emp_name": "rit",
+            "emp_age": 12,
+            "emp_phone_number": 123456,
+            "emp_dept": "itg",
+            "emp_salary": 123,
+            "age": 22
+        },
+        {
+            "emp_id": 20,
+            "emp_name": "rithvik kantha",
+            "emp_age": 22,
+            "emp_phone_number": 7337264708,
+            "emp_dept": "IT",
+            "emp_salary": 1000000
+        }
+    ]
+}
