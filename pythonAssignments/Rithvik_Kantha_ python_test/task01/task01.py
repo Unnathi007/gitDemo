@@ -16,6 +16,7 @@ class PasswordValidation():
             exit()
         else:
             self.list_of_passwords = list_of_passwords.split(",")
+            self.list_of_validated_passwords = []
 
         pass
 
